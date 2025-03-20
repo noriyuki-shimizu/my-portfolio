@@ -1,20 +1,16 @@
-# Nuxt 3 Minimal Starter
+# My Portfolio
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+自身のポートフォリオサイトです。
+
+https://my-portfolio-kappa-murex-32.vercel.app
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# yarn
-yarn install
-
 # npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
 ## Development Server
