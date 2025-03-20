@@ -251,6 +251,7 @@
             to="https://github.com/noriyuki-shimizu"
             target="_blank"
             class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+            aria-label="Contact with me on Github"
           >
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -263,6 +264,7 @@
             to="https://x.com/smnr14785228"
             target="_blank"
             class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+            aria-label="Contact with me on X"
           >
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -275,6 +277,7 @@
             to="https://qiita.com/shiminori0612"
             target="_blank"
             class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+            aria-label="Contact with me on Qiita"
           >
             <svg class="h-8 w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 150">
               <rect width="450" height="150" rx="10" fill="#55C500" />
@@ -294,6 +297,7 @@
             to="https://zenn.dev/shiminori"
             target="_blank"
             class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+            aria-label="Contact with me on Zenn"
           >
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
               <path
