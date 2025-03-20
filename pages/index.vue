@@ -156,15 +156,15 @@
         </div>
       </section>
 
-      <!-- Projects Section -->
+      <!-- Personal Projects Section -->
       <section id="projects" class="mb-20">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Projects</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Personal Project</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <article class="bg-white rounded-lg shadow-lg overflow-hidden">
             <img src="/images/article-nuxt3-600x400.webp" alt="Article Nuxt3" class="w-full h-48 object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-2">技術記事閲覧サイト</h3>
-              <p class="text-gray-600 mb-4">技術記事を閲覧するためのサイトです。</p>
+              <p class="text-gray-600 mb-4">Qiita / Zenn / note の技術記事を閲覧するためのサイトです。</p>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink to="https://shiminori-tec-articles.onrender.com/" class="text-blue-600 hover:text-blue-800 font-medium"
                   >View Site →</NuxtLink
@@ -193,6 +193,47 @@
               </div>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink href="https://github.com/noriyuki-shimizu/book-realm" class="text-blue-600 hover:text-blue-800 font-medium"
+                  >Repository →</NuxtLink
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="/images/front-ui-parts-600x400.webp" alt="Article Nuxt3" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Front UI Parts</h3>
+              <p class="text-gray-600 mb-4">
+                Vue3 + Vite における UI ライブラリ。<br />
+                パッケージ公開を目的とし、業務でも使用できるための練習用として作成したパッケージです。
+              </p>
+              <div class="flex justify-between items-center mb-4">
+                <NuxtLink
+                  to="https://noriyuki-shimizu.github.io/front-ui-parts/?path=/docs/data-display-empty--docs"
+                  class="text-blue-600 hover:text-blue-800 font-medium"
+                  >View Site →</NuxtLink
+                >
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <NuxtLink href="https://www.npmjs.com/package/front-ui-parts" class="text-blue-600 hover:text-blue-800 font-medium"
+                  >npm Package →</NuxtLink
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="/images/my-room-600x400.webp" alt="Article Nuxt3" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">My Room</h3>
+              <p class="text-gray-600 mb-4">
+                Nature Remo の Open API を使用して自身の部屋の温度・湿度・照度の変化をグラフで参照できるサイトです。<br />
+                自信でしか参照できない Web アプリとなります。
+              </p>
+              <div class="flex justify-between items-center mb-4">
+                <NuxtLink
+                  href="https://github.com/noriyuki-shimizu/remo-web2/tree/main"
+                  class="text-blue-600 hover:text-blue-800 font-medium"
                   >Repository →</NuxtLink
                 >
               </div>
