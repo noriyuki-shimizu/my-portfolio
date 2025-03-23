@@ -184,7 +184,10 @@
               <h3 class="text-xl font-semibold mb-2">Book Realm</h3>
               <p class="text-gray-600 mb-4">
                 書籍管理アプリです。<br />
-                画像を解析させ、登録を補助します。 その他、フォームからの入力も行えます。
+                <NuxtLink to="https://www.npmjs.com/package/@google/generative-ai" target="_blank" class="text-blue-600 hover:text-blue-800"
+                  >@google/generative-ai</NuxtLink
+                >
+                を使用して、画像を解析させ、登録を補助します。 その他、フォームからの入力も行えます。
               </p>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink to="https://book-realm-xi.vercel.app/" class="text-blue-600 hover:text-blue-800 font-medium"
