@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
+  css: ['@/assets/css/reset.css', '@/assets/css/global.css'],
   app: {
     head: {
       htmlAttrs: { lang: 'ja' },

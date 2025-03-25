@@ -1,0 +1,42 @@
+/* Global Font Settings for Multilingual (Japanese/English) Portfolio */
+
+:root {
+  /* Primary font stack that works well for both Japanese and English */
+  --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* Alternative font stack with more stylized appearance */
+  --font-alternative: "Avenir Next", "Helvetica Neue", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  /* Font for headings */
+  --font-heading: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  /* Font for code elements */
+  --font-code: "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+}
+
+/* Apply default font to body */
+body {
+  font-family: var(--font-primary);
+  color: #333333;
+  /* Optional: set additional text properties */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "palt"; /* Proportional alternates for better Japanese text layout */
+}
+
+/* Apply heading font to headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.3;
+  letter-spacing: -0.01em; /* Slight negative letter spacing for headings */
+}
+
+/* Apply code font to code elements */
+code, pre, kbd, samp {
+  font-family: var(--font-code);
+}
+
+/* Additional typography optimizations for Japanese text */
+.jp-text {
+  /* Increase line-height slightly for Japanese text */
+  line-height: 1.7;
+  /* Adjust letter spacing for Japanese text */
+  letter-spacing: 0.03em;
+}
