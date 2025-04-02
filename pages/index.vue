@@ -1,3 +1,13 @@
+<script setup lang="ts">
+onMounted(() => {
+  console.log(111)
+})
+
+useNuxtApp().hook('page:finish', () => {
+  console.log('Page finished loading')
+})
+</script>
+
 <template>
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
@@ -61,94 +71,96 @@
         </div>
       </section>
 
-      <!-- Skills Section -->
-      <section id="skills" class="mb-20">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Backend Skills -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Backend</h3>
-            <div class="space-y-3">
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Languages & Frameworks</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Java</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">SpringBoot</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Node.js</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Express</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Hapi</span>
+      <!-- Skills Timeline Section -->
+      <section id="skills" class="mb-20" aria-labelledby="skills-title">
+        <h2 id="skills-title" class="text-3xl font-bold text-gray-900 mb-8">Skills Timeline</h2>
+        <div class="relative">
+          <!-- Timeline Line -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200"></div>
+
+          <!-- Timeline Items -->
+          <div class="space-y-16">
+            <!-- Backend Skills -->
+            <div class="relative" aria-labelledby="backend-title">
+              <div class="flex items-center w-full">
+                <div class="w-1/2 pr-8 text-right">
+                  <h3 id="backend-title" class="text-xl font-semibold mb-4">Backend Development</h3>
+                  <p class="text-gray-600 mb-4">2018 - Present</p>
+                  <div class="space-y-2">
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">Spring Boot</div>
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">Express</div>
+                    <div class="skill-tag">Hapi</div>
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">PostgreSQL</div>
+                    <div class="skill-tag">SQLite</div>
+                    <div class="skill-tag">MongoDB</div>
+                    <div class="skill-tag">TypeORM</div>
+                    <div class="skill-tag">Sequelize</div>
+                  </div>
                 </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Databases</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">MySQL</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">PostgreSQL</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">SQLite</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">MongoDB</span>
-                </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">ORMs</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">TypeORM</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Sequelize</span>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"></div>
+                <div class="w-1/2 pl-8">
+                  <p class="text-gray-600">
+                    Started my journey with Java and Spring Boot, later expanding into Node.js ecosystem. Gained extensive experience with
+                    various databases and ORMs. Specialized in building scalable microservices and RESTful APIs.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Frontend Skills -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Frontend</h3>
-            <div class="space-y-3">
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Core Technologies</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">HTML</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">CSS</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">SCSS</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">JavaScript</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">TypeScript</span>
+            <!-- Frontend Skills -->
+            <div class="relative" aria-labelledby="frontend-title">
+              <div class="flex items-center w-full">
+                <div class="w-1/2 pr-8 text-right">
+                  <p class="text-gray-600">
+                    Began with HTML, CSS, and JavaScript fundamentals. Progressed to modern frameworks and libraries. Focused on creating
+                    responsive, accessible, and performant user interfaces.
+                  </p>
                 </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Frameworks</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Vue.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Nuxt.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">React.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Next.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Angular</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">jQuery</span>
-                </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">UI Libraries</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Bootstrap</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Ant Design Vue</span>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-green-500 rounded-full"></div>
+                <div class="w-1/2 pl-8">
+                  <h3 id="frontend-title" class="text-xl font-semibold mb-4">Frontend Development</h3>
+                  <p class="text-gray-600 mb-4">2019 - Present</p>
+                  <div class="flex flex-wrap gap-2">
+                    <div class="skill-tag">HTML</div>
+                    <div class="skill-tag">CSS</div>
+                    <div class="skill-tag">SCSS</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">TypeScript</div>
+                    <div class="skill-tag">Vue.js</div>
+                    <div class="skill-tag">Nuxt.js</div>
+                    <div class="skill-tag">React.js</div>
+                    <div class="skill-tag">Next.js</div>
+                    <div class="skill-tag">Angular</div>
+                    <div class="skill-tag">jQuery</div>
+                    <div class="skill-tag">Bootstrap</div>
+                    <div class="skill-tag">Ant Design Vue</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Infrastructure Skills -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Infrastructure</h3>
-            <div class="space-y-3">
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Cloud Platforms</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">AWS</span>
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">GCP</span>
+            <!-- Infrastructure Skills -->
+            <div class="relative" aria-labelledby="infra-title">
+              <div class="flex items-center w-full">
+                <div class="w-1/2 pr-8 text-right">
+                  <h3 id="infra-title" class="text-xl font-semibold mb-4">Infrastructure</h3>
+                  <p class="text-gray-600 mb-4">2020 - Present</p>
+                  <div class="space-y-2">
+                    <div class="skill-tag">AWS</div>
+                    <div class="skill-tag">GCP</div>
+                    <div class="skill-tag">Terraform</div>
+                    <div class="skill-tag">Docker</div>
+                  </div>
                 </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">DevOps Tools</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">Terraform</span>
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">Docker</span>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"></div>
+                <div class="w-1/2 pl-8">
+                  <p class="text-gray-600">
+                    Developed expertise in cloud platforms and infrastructure as code. Implemented containerized solutions and automated
+                    deployment pipelines. Focus on scalable and maintainable cloud architectures.
+                  </p>
                 </div>
               </div>
             </div>
@@ -231,7 +243,7 @@
               <h3 class="text-xl font-semibold mb-2">My Room</h3>
               <p class="text-gray-600 mb-4">
                 Nature Remo の Open API を使用して自身の部屋の温度・湿度・照度の変化をグラフで参照できるサイトです。<br />
-                自信でしか参照できない Web アプリとなります。
+                自身でしか参照できない Web アプリとなります。
               </p>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink
@@ -323,3 +335,10 @@
     </footer>
   </div>
 </template>
+
+<style scoped>
+.skill-tag {
+  @apply inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium;
+  transition: all 0.3s ease;
+}
+</style>
