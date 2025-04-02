@@ -231,7 +231,7 @@
               <h3 class="text-xl font-semibold mb-2">My Room</h3>
               <p class="text-gray-600 mb-4">
                 Nature Remo の Open API を使用して自身の部屋の温度・湿度・照度の変化をグラフで参照できるサイトです。<br />
-                自信でしか参照できない Web アプリとなります。
+                自身でしか参照できない Web アプリとなります。
               </p>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink
