@@ -61,94 +61,168 @@
         </div>
       </section>
 
-      <!-- Skills Section -->
-      <section id="skills" class="mb-20">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Backend Skills -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Backend</h3>
-            <div class="space-y-3">
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Languages & Frameworks</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Java</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">SpringBoot</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Node.js</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Express</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Hapi</span>
+      <!-- Skills Timeline Section -->
+      <section id="skills" class="mb-20" aria-labelledby="skills-title">
+        <h2 id="skills-title" class="text-3xl font-bold text-gray-900 mb-8">Skills Timeline</h2>
+        <div class="relative">
+          <!-- Timeline Line -->
+          <div class="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 h-full w-1 bg-gray-200"></div>
+
+          <!-- Timeline Items -->
+          <div class="space-y-16">
+            <!-- Backend Skills -->
+            <div class="relative" aria-labelledby="backend-title">
+              <div class="flex items-start w-full flex-col md:flex-row md:items-center">
+                <div class="hidden md:block md:w-1/2 pr-8">
+                  <div class="text-right">
+                    <h3 id="backend-title" class="text-xl font-semibold mb-4">Backend Development</h3>
+                    <p class="text-gray-600 mb-6">2018 - Present</p>
+                    <div class="space-y-4">
+                      <div class="flex flex-row-reverse items-center">
+                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Java">Java</div>
+                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="6 years experience">6 years</span>
+                      </div>
+                      <div class="flex flex-row-reverse items-center">
+                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Spring Boot">Spring Boot</div>
+                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="5 years experience">5 years</span>
+                      </div>
+                      <div class="flex flex-row-reverse items-center">
+                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Node.js">Node.js</div>
+                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="4 years experience">4 years</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Databases</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">MySQL</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">PostgreSQL</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">SQLite</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">MongoDB</span>
-                </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">ORMs</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">TypeORM</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Sequelize</span>
+                <div
+                  class="absolute left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                  role="presentation"
+                ></div>
+                <div class="md:w-1/2 w-full pl-16 md:pl-8">
+                  <div class="md:hidden mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Backend Development</h3>
+                    <p class="text-gray-600">2018 - Present</p>
+                  </div>
+                  <p class="text-gray-600 mb-6">
+                    Started my journey with Java and Spring Boot, later expanding into Node.js ecosystem. Gained extensive experience with
+                    various databases and ORMs. Specialized in building scalable microservices and RESTful APIs.
+                  </p>
+                  <div class="md:hidden space-y-4">
+                    <div class="flex items-center">
+                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Java">Java</div>
+                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="6 years experience">6 years</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Spring Boot">Spring Boot</div>
+                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="5 years experience">5 years</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Node.js">Node.js</div>
+                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Frontend Skills -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Frontend</h3>
-            <div class="space-y-3">
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Core Technologies</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">HTML</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">CSS</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">SCSS</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">JavaScript</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">TypeScript</span>
+            <!-- Frontend Skills -->
+            <div class="relative" aria-labelledby="frontend-title">
+              <div class="flex items-start w-full flex-col md:flex-row md:items-center">
+                <div class="hidden md:block md:w-1/2 pr-8">
+                  <p class="text-right text-gray-600">
+                    Began with HTML, CSS, and JavaScript fundamentals. Progressed to modern frameworks and libraries. Focused on creating
+                    responsive, accessible, and performant user interfaces.
+                  </p>
                 </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Frameworks</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Vue.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Nuxt.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">React.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Next.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Angular</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">jQuery</span>
-                </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">UI Libraries</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Bootstrap</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Ant Design Vue</span>
+                <div
+                  class="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-green-500 rounded-full"
+                  role="presentation"
+                ></div>
+                <div class="md:w-1/2 w-full pl-16 md:pl-8">
+                  <div class="md:hidden mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Frontend Development</h3>
+                    <p class="text-gray-600">2019 - Present</p>
+                  </div>
+                  <div class="md:hidden mb-6">
+                    <p class="text-gray-600">
+                      Began with HTML, CSS, and JavaScript fundamentals. Progressed to modern frameworks and libraries. Focused on creating
+                      responsive, accessible, and performant user interfaces.
+                    </p>
+                  </div>
+                  <div class="space-y-4">
+                    <div class="hidden md:block pr-8">
+                      <div class="text-left">
+                        <h3 id="frontend-title" class="text-xl font-semibold mb-4">Frontend Development</h3>
+                        <p class="text-gray-600 mb-6">2019 - Present</p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center">
+                      <div class="min-w-[120px] text-left" role="text" aria-label="Vue.js">Vue.js</div>
+                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="5 years experience">5 years</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="min-w-[120px] text-left" role="text" aria-label="React">React</div>
+                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="min-w-[120px] text-left" role="text" aria-label="TypeScript">TypeScript</div>
+                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Infrastructure Skills -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Infrastructure</h3>
-            <div class="space-y-3">
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Cloud Platforms</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">AWS</span>
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">GCP</span>
+            <!-- Infrastructure Skills -->
+            <div class="relative" aria-labelledby="infra-title">
+              <div class="flex items-start w-full flex-col md:flex-row md:items-center">
+                <div class="hidden md:block md:w-1/2 pr-8">
+                  <div class="text-right">
+                    <h3 id="infra-title" class="text-xl font-semibold mb-4">Infrastructure</h3>
+                    <p class="text-gray-600 mb-6">2020 - Present</p>
+                    <div class="space-y-4">
+                      <div class="flex flex-row-reverse items-center">
+                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="AWS">AWS</div>
+                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="4 years experience">4 years</span>
+                      </div>
+                      <div class="flex flex-row-reverse items-center">
+                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Docker">Docker</div>
+                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="4 years experience">4 years</span>
+                      </div>
+                      <div class="flex flex-row-reverse items-center">
+                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Terraform">Terraform</div>
+                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="3 years experience">3 years</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">DevOps Tools</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">Terraform</span>
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">Docker</span>
+                <div
+                  class="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"
+                  role="presentation"
+                ></div>
+                <div class="md:w-1/2 w-full pl-16 md:pl-8">
+                  <div class="md:hidden mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Infrastructure</h3>
+                    <p class="text-gray-600">2020 - Present</p>
+                  </div>
+                  <p class="text-gray-600 mb-6">
+                    Developed expertise in cloud platforms and infrastructure as code. Implemented containerized solutions and automated
+                    deployment pipelines. Focus on scalable and maintainable cloud architectures.
+                  </p>
+                  <div class="md:hidden space-y-4">
+                    <div class="flex items-center">
+                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="AWS">AWS</div>
+                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Docker">Docker</div>
+                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Terraform">Terraform</div>
+                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="3 years experience">3 years</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
