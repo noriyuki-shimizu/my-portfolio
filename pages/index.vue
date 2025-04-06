@@ -53,7 +53,7 @@
                 </div>
                 <div>
                   <h3 class="text-lg font-semibold text-gray-700">私について</h3>
-                  <p class="text-gray-600">最新の技術にアンテナを貼り、常に学び続ける姿勢を大切にしています。</p>
+                  <p class="text-gray-600">最新の技術にアンテナを貼り／常に学び続ける姿勢を大切にしています。</p>
                 </div>
               </div>
             </div>
@@ -61,94 +61,207 @@
         </div>
       </section>
 
-      <!-- Skills Section -->
-      <section id="skills" class="mb-20">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Backend Skills -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Backend</h3>
-            <div class="space-y-3">
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Languages & Frameworks</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Java</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">SpringBoot</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Node.js</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Express</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Hapi</span>
+      <!-- Skills Timeline Section -->
+      <section id="skills" class="mb-20" aria-labelledby="skills-title">
+        <h2 id="skills-title" class="text-3xl font-bold text-gray-900 mb-8">Skills Timeline</h2>
+        <!-- <div class="relative"> -->
+        <div class="relative bg-white rounded-lg shadow-lg p-8">
+          <!-- Timeline Line -->
+          <div class="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 h-[calc(100%-4rem)] w-1 bg-gray-200"></div>
+
+          <!-- Timeline Items -->
+          <div class="space-y-16">
+            <div class="relative" aria-labelledby="backend-title">
+              <div class="flex items-start w-full flex-col md:flex-row md:items-center">
+                <div class="hidden md:block md:w-1/2 pr-8">
+                  <p class="text-gray-600 mb-6">
+                    官公庁や自治体などの入札情報や落札情報を提供するサービスのアプリケーション開発をさせていただいております。<br />
+                    フロントエンドエンジニアとして、機能拡張・保守をメインに担当させていただいております。<br />
+                    現在もこちらの現場でお世話になっております。
+                  </p>
                 </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Databases</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">MySQL</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">PostgreSQL</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">SQLite</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">MongoDB</span>
-                </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">ORMs</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">TypeORM</span>
-                  <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Sequelize</span>
+                <div
+                  class="absolute md:left-1/2 left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                  role="presentation"
+                ></div>
+                <div class="md:w-1/2 w-full pl-6 md:pl-8">
+                  <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">官公庁・自治体の入札・落札情報サービス開発</h3>
+                    <p class="text-gray-600">2021年4月〜現在</p>
+                  </div>
+                  <p class="md:hidden text-gray-600 mb-6">
+                    官公庁や自治体などの入札情報や落札情報を提供するサービスのアプリケーション開発をさせていただいております。<br />
+                    フロントエンドエンジニアとして、機能拡張・保守をメインに担当させていただいております。<br />
+                    現在もこちらの現場でお世話になっております。
+                  </p>
+                  <div class="text-left">
+                    <h4 id="backend-title" class="text-l font-semibold mb-2">使用技術</h4>
+                    <div class="grid grid-cols-1 gap-4">
+                      <!-- Frontend -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">フロントエンド</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Nuxt（v3.x）</li>
+                          <li>Vue（v3.x）</li>
+                          <li>Chart.js</li>
+                          <li>Playwright</li>
+                        </ul>
+                      </div>
+
+                      <!-- DevOps/Infrastructure -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">DevOps・インフラ</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Git／Docker／AWS (ECS、ECR、CloudFront、CloudWatch、S3)／Terraform</li>
+                          <li>Slack／Github Actions／CircleCI</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Frontend Skills -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Frontend</h3>
-            <div class="space-y-3">
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Core Technologies</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">HTML</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">CSS</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">SCSS</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">JavaScript</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">TypeScript</span>
+            <div class="relative" aria-labelledby="backend-title">
+              <div class="flex items-start w-full flex-col md:flex-row md:items-center">
+                <div class="hidden md:block md:w-1/2 pr-8">
+                  <p class="text-gray-600 mb-6">
+                    データの繋がりを可視化するデータ分析システムの開発に携わりました。<br />
+                    オンプレのシステムのため、バック・フロント・インフラ等すべての開発に携わりました。<br />
+                    e2e テストのひな形構築や／i18n 対応／バックエンド側のパフォーマンスチューニング等を行いました。
+                  </p>
                 </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Frameworks</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Vue.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Nuxt.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">React.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Next.js</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Angular</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">jQuery</span>
-                </div>
-              </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">UI Libraries</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Bootstrap</span>
-                  <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">Ant Design Vue</span>
+                <div
+                  class="absolute md:left-1/2 left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                  role="presentation"
+                ></div>
+                <div class="md:w-1/2 w-full pl-6 md:pl-8">
+                  <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">データ分析システムの開発</h3>
+                    <p class="text-gray-600">2020年2月〜2021年4月</p>
+                  </div>
+                  <p class="md:hidden text-gray-600 mb-6">
+                    データの繋がりを可視化するデータ分析システムの開発に携わりました。<br />
+                    オンプレのシステムのため、バック・フロント・インフラ等すべての開発に携わりました。<br />
+                    e2e テストのひな形構築や／i18n 対応／バックエンド側のパフォーマンスチューニング等を行いました。
+                  </p>
+                  <div class="text-left">
+                    <h4 id="backend-title" class="text-l font-semibold mb-2">使用技術</h4>
+                    <div class="grid grid-cols-1 gap-4">
+                      <!-- Backend -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">バックエンド</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Java (v11)</li>
+                          <li>Spring Boot (v2.1)</li>
+                          <li>Node.js (v12)</li>
+                        </ul>
+                      </div>
+
+                      <!-- Frontend -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">フロントエンド</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>AngularJS (v8)</li>
+                        </ul>
+                      </div>
+
+                      <!-- Libraries and Tools -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">ライブラリ・ツール</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>lucene／flyway／lombok</li>
+                          <li>Cypress／rxjs／H2</li>
+                        </ul>
+                      </div>
+
+                      <!-- DevOps/Infrastructure -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">DevOps・インフラ</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Git／Docker／AWS (EC2)</li>
+                          <li>SonarQube／Gradle／Swagger／Slack</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Infrastructure Skills -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Infrastructure</h3>
-            <div class="space-y-3">
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">Cloud Platforms</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">AWS</span>
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">GCP</span>
+            <div class="relative" aria-labelledby="backend-title">
+              <div class="flex items-start w-full flex-col md:flex-row md:items-center">
+                <div class="hidden md:block md:w-1/2 pr-8">
+                  <p class="text-gray-600 mb-6">
+                    飲食店などで用いるタブレットでの注文アプリの管理システム開発に携わりました。<br />
+                    バックエンド側で REST API の開発をメインに担当させていただきました。<br />
+                    単体テスト（UT）の導入を新規でさせていただくなど、貴重な体験をさせていただきました。
+                  </p>
+                </div>
+                <div
+                  class="absolute md:left-1/2 left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                  role="presentation"
+                ></div>
+                <div class="md:w-1/2 w-full pl-6 md:pl-8">
+                  <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">飲食店の注文管理システム開発</h3>
+                    <p class="text-gray-600">2019年5月〜2020年1月</p>
+                  </div>
+                  <p class="md:hidden text-gray-600 mb-6">
+                    飲食店などで用いるタブレットでの注文アプリの管理システム開発に携わりました。<br />
+                    バックエンド側で REST API の開発をメインに担当させていただきました。<br />
+                    単体テスト（UT）の導入を新規でさせていただくなど、貴重な体験をさせていただきました。
+                  </p>
+                  <div class="text-left">
+                    <h4 id="backend-title" class="text-l font-semibold mb-2">使用技術</h4>
+                    <div class="grid grid-cols-1 gap-4">
+                      <!-- Backend -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">バックエンド</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Node.js</li>
+                          <li>hapi</li>
+                          <li>PostgreSQL</li>
+                        </ul>
+                      </div>
+
+                      <!-- Frontend -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">フロントエンド</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>React.js</li>
+                          <li>Redux</li>
+                        </ul>
+                      </div>
+
+                      <!-- DevOps/Infrastructure -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">DevOps・インフラ</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Git／Docker／AWS (s3、Amazon API Gateway、AWS Lambda、CodePipeline)</li>
+                          <li>Slack</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="skill-group">
-                <h4 class="text-sm font-medium text-gray-700 mb-2">DevOps Tools</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">Terraform</span>
-                  <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-sm">Docker</span>
+            </div>
+
+            <div class="relative" aria-labelledby="backend-title">
+              <div class="flex items-start w-full flex-col md:flex-row md:items-center">
+                <div class="hidden md:block md:w-1/2 pr-8">
+                  <p class="text-gray-600 mb-6">気が向き次第、記載させていただきます・・・</p>
+                </div>
+                <div
+                  class="absolute md:left-1/2 left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                  role="presentation"
+                ></div>
+                <div class="md:w-1/2 w-full pl-6 md:pl-8">
+                  <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">〜省略〜</h3>
+                  </div>
+                  <p class="md:hidden text-gray-600 mb-6">気が向き次第、記載させていただきます・・・</p>
                 </div>
               </div>
             </div>
@@ -164,7 +277,7 @@
             <img src="/images/article-nuxt3-600x400.webp" alt="Article Nuxt3" class="w-full h-48 object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-2">技術記事閲覧サイト</h3>
-              <p class="text-gray-600 mb-4">Qiita / Zenn / note の技術記事を閲覧するためのサイトです。</p>
+              <p class="text-gray-600 mb-4">Qiita／Zenn／note の技術記事を閲覧するためのサイトです。</p>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink to="https://shiminori-tec-articles.onrender.com/" class="text-blue-600 hover:text-blue-800 font-medium"
                   >View Site →</NuxtLink
@@ -187,7 +300,7 @@
                 <NuxtLink to="https://www.npmjs.com/package/@google/generative-ai" target="_blank" class="text-blue-600 hover:text-blue-800"
                   >@google/generative-ai</NuxtLink
                 >
-                を使用して、画像を解析させ、登録を補助します。 その他、フォームからの入力も行えます。
+                を使用して／画像を解析させ／登録を補助します。 その他／フォームからの入力も行えます。
               </p>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink to="https://book-realm-xi.vercel.app/" class="text-blue-600 hover:text-blue-800 font-medium"
@@ -208,7 +321,7 @@
               <h3 class="text-xl font-semibold mb-2">Front UI Parts</h3>
               <p class="text-gray-600 mb-4">
                 Vue3 + Vite における UI ライブラリ。<br />
-                パッケージ公開を目的とし、業務でも使用できるための練習用として作成したパッケージです。
+                パッケージ公開を目的とし／業務でも使用できるための練習用として作成したパッケージです。
               </p>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink
