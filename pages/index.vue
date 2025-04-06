@@ -128,13 +128,27 @@
             <div class="relative" aria-labelledby="frontend-title">
               <div class="flex items-start w-full flex-col md:flex-row md:items-center">
                 <div class="hidden md:block md:w-1/2 pr-8">
-                  <p class="text-right text-gray-600">
-                    Began with HTML, CSS, and JavaScript fundamentals. Progressed to modern frameworks and libraries. Focused on creating
-                    responsive, accessible, and performant user interfaces.
-                  </p>
+                  <div class="text-right">
+                    <h3 id="frontend-title" class="text-xl font-semibold mb-4">Frontend Development</h3>
+                    <p class="text-gray-600 mb-6">2019 - Present</p>
+                    <div class="space-y-4">
+                      <div class="flex flex-row-reverse items-center">
+                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Vue.js">Vue.js</div>
+                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="5 years experience">5 years</span>
+                      </div>
+                      <div class="flex flex-row-reverse items-center">
+                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="React">React</div>
+                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="4 years experience">4 years</span>
+                      </div>
+                      <div class="flex flex-row-reverse items-center">
+                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="TypeScript">TypeScript</div>
+                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="4 years experience">4 years</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div
-                  class="absolute md:left-1/2 left-8 transform -translate-x-1/2 w-4 h-4 bg-green-500 rounded-full"
+                  class="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-green-500 rounded-full"
                   role="presentation"
                 ></div>
                 <div class="md:w-1/2 w-full pl-16 md:pl-8">
@@ -142,30 +156,21 @@
                     <h3 class="text-xl font-semibold mb-2">Frontend Development</h3>
                     <p class="text-gray-600">2019 - Present</p>
                   </div>
-                  <div class="md:hidden mb-6">
-                    <p class="text-gray-600">
-                      Began with HTML, CSS, and JavaScript fundamentals. Progressed to modern frameworks and libraries. Focused on creating
-                      responsive, accessible, and performant user interfaces.
-                    </p>
-                  </div>
-                  <div class="space-y-4">
-                    <div class="hidden md:block pr-8">
-                      <div class="text-left">
-                        <h3 id="frontend-title" class="text-xl font-semibold mb-4">Frontend Development</h3>
-                        <p class="text-gray-600 mb-6">2019 - Present</p>
-                      </div>
-                    </div>
-
+                  <p class="text-gray-600 mb-6">
+                    Began with HTML, CSS, and JavaScript fundamentals. Progressed to modern frameworks and libraries. Focused on creating
+                    responsive, accessible, and performant user interfaces.
+                  </p>
+                  <div class="md:hidden space-y-4">
                     <div class="flex items-center">
-                      <div class="min-w-[120px] text-left" role="text" aria-label="Vue.js">Vue.js</div>
+                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Vue.js">Vue.js</div>
                       <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="5 years experience">5 years</span>
                     </div>
                     <div class="flex items-center">
-                      <div class="min-w-[120px] text-left" role="text" aria-label="React">React</div>
+                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="React">React</div>
                       <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
                     </div>
                     <div class="flex items-center">
-                      <div class="min-w-[120px] text-left" role="text" aria-label="TypeScript">TypeScript</div>
+                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="TypeScript">TypeScript</div>
                       <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
                     </div>
                   </div>
