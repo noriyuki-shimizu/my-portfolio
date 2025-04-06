@@ -94,7 +94,7 @@
                   </div>
                 </div>
                 <div
-                  class="absolute left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                  class="absolute md:left-1/2 left-8 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
                   role="presentation"
                 ></div>
                 <div class="md:w-1/2 w-full pl-16 md:pl-8">
@@ -134,7 +134,7 @@
                   </p>
                 </div>
                 <div
-                  class="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-green-500 rounded-full"
+                  class="absolute md:left-1/2 left-8 transform -translate-x-1/2 w-4 h-4 bg-green-500 rounded-full"
                   role="presentation"
                 ></div>
                 <div class="md:w-1/2 w-full pl-16 md:pl-8">
@@ -197,7 +197,7 @@
                   </div>
                 </div>
                 <div
-                  class="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"
+                  class="absolute md:left-1/2 left-8 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"
                   role="presentation"
                 ></div>
                 <div class="md:w-1/2 w-full pl-16 md:pl-8">
