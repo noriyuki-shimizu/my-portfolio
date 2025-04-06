@@ -53,7 +53,7 @@
                 </div>
                 <div>
                   <h3 class="text-lg font-semibold text-gray-700">私について</h3>
-                  <p class="text-gray-600">最新の技術にアンテナを貼り、常に学び続ける姿勢を大切にしています。</p>
+                  <p class="text-gray-600">最新の技術にアンテナを貼り／常に学び続ける姿勢を大切にしています。</p>
                 </div>
               </div>
             </div>
@@ -71,164 +71,197 @@
 
           <!-- Timeline Items -->
           <div class="space-y-16">
-            <!-- Backend Skills -->
             <div class="relative" aria-labelledby="backend-title">
               <div class="flex items-start w-full flex-col md:flex-row md:items-center">
                 <div class="hidden md:block md:w-1/2 pr-8">
-                  <div class="text-right">
-                    <h3 id="backend-title" class="text-xl font-semibold mb-4">Backend Development</h3>
-                    <p class="text-gray-600 mb-6">2018 - Present</p>
-                    <div class="space-y-4">
-                      <div class="flex flex-row-reverse items-center">
-                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Java">Java</div>
-                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="6 years experience">6 years</span>
-                      </div>
-                      <div class="flex flex-row-reverse items-center">
-                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Spring Boot">Spring Boot</div>
-                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="5 years experience">5 years</span>
-                      </div>
-                      <div class="flex flex-row-reverse items-center">
-                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Node.js">Node.js</div>
-                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="4 years experience">4 years</span>
-                      </div>
-                    </div>
-                  </div>
+                  <p class="text-gray-600 mb-6">
+                    官公庁や自治体などの入札情報や落札情報を提供するサービスのアプリケーション開発をさせていただいております。<br />
+                    フロントエンドエンジニアとして、機能拡張・保守をメインに担当させていただいております。<br />
+                    現在もこちらの現場でお世話になっております。
+                  </p>
                 </div>
                 <div
-                  class="absolute md:left-1/2 left-8 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                  class="absolute md:left-1/2 left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
                   role="presentation"
                 ></div>
-                <div class="md:w-1/2 w-full pl-16 md:pl-8">
-                  <div class="md:hidden mb-6">
-                    <h3 class="text-xl font-semibold mb-2">Backend Development</h3>
-                    <p class="text-gray-600">2018 - Present</p>
+                <div class="md:w-1/2 w-full pl-6 md:pl-8">
+                  <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">官公庁・自治体の入札・落札情報サービス開発</h3>
+                    <p class="text-gray-600">2021年4月〜現在</p>
                   </div>
-                  <p class="text-gray-600 mb-6">
-                    Started my journey with Java and Spring Boot, later expanding into Node.js ecosystem. Gained extensive experience with
-                    various databases and ORMs. Specialized in building scalable microservices and RESTful APIs.
+                  <p class="md:hidden text-gray-600 mb-6">
+                    官公庁や自治体などの入札情報や落札情報を提供するサービスのアプリケーション開発をさせていただいております。<br />
+                    フロントエンドエンジニアとして、機能拡張・保守をメインに担当させていただいております。<br />
+                    現在もこちらの現場でお世話になっております。
                   </p>
-                  <div class="md:hidden space-y-4">
-                    <div class="flex items-center">
-                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Java">Java</div>
-                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="6 years experience">6 years</span>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Spring Boot">Spring Boot</div>
-                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="5 years experience">5 years</span>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Node.js">Node.js</div>
-                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
+                  <div class="text-left">
+                    <h4 id="backend-title" class="text-l font-semibold mb-2">使用技術</h4>
+                    <div class="grid grid-cols-1 gap-4">
+                      <!-- Frontend -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">フロントエンド</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Nuxt（v3.x）</li>
+                          <li>Vue（v3.x）</li>
+                          <li>Chart.js</li>
+                          <li>Playwright</li>
+                        </ul>
+                      </div>
+
+                      <!-- DevOps/Infrastructure -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">DevOps・インフラ</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Git／Docker／AWS (ECS、ECR、CloudFront、CloudWatch、S3)／Terraform</li>
+                          <li>Slack／Github Actions／CircleCI</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Frontend Skills -->
-            <div class="relative" aria-labelledby="frontend-title">
+            <div class="relative" aria-labelledby="backend-title">
               <div class="flex items-start w-full flex-col md:flex-row md:items-center">
                 <div class="hidden md:block md:w-1/2 pr-8">
-                  <div class="text-right">
-                    <h3 id="frontend-title" class="text-xl font-semibold mb-4">Frontend Development</h3>
-                    <p class="text-gray-600 mb-6">2019 - Present</p>
-                    <div class="space-y-4">
-                      <div class="flex flex-row-reverse items-center">
-                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Vue.js">Vue.js</div>
-                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="5 years experience">5 years</span>
-                      </div>
-                      <div class="flex flex-row-reverse items-center">
-                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="React">React</div>
-                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="4 years experience">4 years</span>
-                      </div>
-                      <div class="flex flex-row-reverse items-center">
-                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="TypeScript">TypeScript</div>
-                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="4 years experience">4 years</span>
-                      </div>
-                    </div>
-                  </div>
+                  <p class="text-gray-600 mb-6">
+                    データの繋がりを可視化するデータ分析システムの開発に携わりました。<br />
+                    オンプレのシステムのため、バック・フロント・インフラ等すべての開発に携わりました。<br />
+                    e2e テストのひな形構築や／i18n 対応／バックエンド側のパフォーマンスチューニング等を行いました。
+                  </p>
                 </div>
                 <div
-                  class="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 -translate-x-1/2 w-4 h-4 bg-green-500 rounded-full"
+                  class="absolute md:left-1/2 left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
                   role="presentation"
                 ></div>
-                <div class="md:w-1/2 w-full pl-16 md:pl-8">
-                  <div class="md:hidden mb-6">
-                    <h3 class="text-xl font-semibold mb-2">Frontend Development</h3>
-                    <p class="text-gray-600">2019 - Present</p>
+                <div class="md:w-1/2 w-full pl-6 md:pl-8">
+                  <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">データ分析システムの開発</h3>
+                    <p class="text-gray-600">2020年2月〜2021年4月</p>
                   </div>
-                  <p class="text-gray-600 mb-6">
-                    Began with HTML, CSS, and JavaScript fundamentals. Progressed to modern frameworks and libraries. Focused on creating
-                    responsive, accessible, and performant user interfaces.
+                  <p class="md:hidden text-gray-600 mb-6">
+                    データの繋がりを可視化するデータ分析システムの開発に携わりました。<br />
+                    オンプレのシステムのため、バック・フロント・インフラ等すべての開発に携わりました。<br />
+                    e2e テストのひな形構築や／i18n 対応／バックエンド側のパフォーマンスチューニング等を行いました。
                   </p>
-                  <div class="md:hidden space-y-4">
-                    <div class="flex items-center">
-                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Vue.js">Vue.js</div>
-                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="5 years experience">5 years</span>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="React">React</div>
-                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="TypeScript">TypeScript</div>
-                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
+                  <div class="text-left">
+                    <h4 id="backend-title" class="text-l font-semibold mb-2">使用技術</h4>
+                    <div class="grid grid-cols-1 gap-4">
+                      <!-- Backend -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">バックエンド</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Java (v11)</li>
+                          <li>Spring Boot (v2.1)</li>
+                          <li>Node.js (v12)</li>
+                        </ul>
+                      </div>
+
+                      <!-- Frontend -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">フロントエンド</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>AngularJS (v8)</li>
+                        </ul>
+                      </div>
+
+                      <!-- Libraries and Tools -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">ライブラリ・ツール</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>lucene／flyway／lombok</li>
+                          <li>Cypress／rxjs／H2</li>
+                        </ul>
+                      </div>
+
+                      <!-- DevOps/Infrastructure -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">DevOps・インフラ</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Git／Docker／AWS (EC2)</li>
+                          <li>SonarQube／Gradle／Swagger／Slack</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Infrastructure Skills -->
-            <div class="relative" aria-labelledby="infra-title">
+            <div class="relative" aria-labelledby="backend-title">
               <div class="flex items-start w-full flex-col md:flex-row md:items-center">
                 <div class="hidden md:block md:w-1/2 pr-8">
-                  <div class="text-right">
-                    <h3 id="infra-title" class="text-xl font-semibold mb-4">Infrastructure</h3>
-                    <p class="text-gray-600 mb-6">2020 - Present</p>
-                    <div class="space-y-4">
-                      <div class="flex flex-row-reverse items-center">
-                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="AWS">AWS</div>
-                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="4 years experience">4 years</span>
+                  <p class="text-gray-600 mb-6">
+                    飲食店などで用いるタブレットでの注文アプリの管理システム開発に携わりました。<br />
+                    バックエンド側で REST API の開発をメインに担当させていただきました。<br />
+                    単体テスト（UT）の導入を新規でさせていただくなど、貴重な体験をさせていただきました。
+                  </p>
+                </div>
+                <div
+                  class="absolute md:left-1/2 left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                  role="presentation"
+                ></div>
+                <div class="md:w-1/2 w-full pl-6 md:pl-8">
+                  <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">飲食店の注文管理システム開発</h3>
+                    <p class="text-gray-600">2019年5月〜2020年1月</p>
+                  </div>
+                  <p class="md:hidden text-gray-600 mb-6">
+                    飲食店などで用いるタブレットでの注文アプリの管理システム開発に携わりました。<br />
+                    バックエンド側で REST API の開発をメインに担当させていただきました。<br />
+                    単体テスト（UT）の導入を新規でさせていただくなど、貴重な体験をさせていただきました。
+                  </p>
+                  <div class="text-left">
+                    <h4 id="backend-title" class="text-l font-semibold mb-2">使用技術</h4>
+                    <div class="grid grid-cols-1 gap-4">
+                      <!-- Backend -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">バックエンド</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Node.js</li>
+                          <li>hapi</li>
+                          <li>PostgreSQL</li>
+                        </ul>
                       </div>
-                      <div class="flex flex-row-reverse items-center">
-                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Docker">Docker</div>
-                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="4 years experience">4 years</span>
+
+                      <!-- Frontend -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">フロントエンド</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>React.js</li>
+                          <li>Redux</li>
+                        </ul>
                       </div>
-                      <div class="flex flex-row-reverse items-center">
-                        <div class="skill-tag min-w-[120px] text-right" role="text" aria-label="Terraform">Terraform</div>
-                        <span class="text-gray-600 min-w-[80px] text-right mr-4" role="text" aria-label="3 years experience">3 years</span>
+
+                      <!-- DevOps/Infrastructure -->
+                      <div>
+                        <h5 class="text-gray-700 mb-2 text-sm font-semibold">DevOps・インフラ</h5>
+                        <ul class="list-disc list-inside text-gray-600 text-xs">
+                          <li>Git／Docker／AWS (s3、Amazon API Gateway、AWS Lambda、CodePipeline)</li>
+                          <li>Slack</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div class="relative" aria-labelledby="backend-title">
+              <div class="flex items-start w-full flex-col md:flex-row md:items-center">
+                <div class="hidden md:block md:w-1/2 pr-8">
+                  <p class="text-gray-600 mb-6">気が向き次第、記載させていただきます・・・</p>
+                </div>
                 <div
-                  class="absolute md:left-1/2 left-8 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full"
+                  class="absolute md:left-1/2 left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
                   role="presentation"
                 ></div>
-                <div class="md:w-1/2 w-full pl-16 md:pl-8">
-                  <div class="md:hidden mb-6">
-                    <h3 class="text-xl font-semibold mb-2">Infrastructure</h3>
-                    <p class="text-gray-600">2020 - Present</p>
+                <div class="md:w-1/2 w-full pl-6 md:pl-8">
+                  <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">〜省略〜</h3>
                   </div>
-                  <p class="text-gray-600 mb-6">
-                    Developed expertise in cloud platforms and infrastructure as code. Implemented containerized solutions and automated
-                    deployment pipelines. Focus on scalable and maintainable cloud architectures.
-                  </p>
-                  <div class="md:hidden space-y-4">
-                    <div class="flex items-center">
-                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="AWS">AWS</div>
-                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Docker">Docker</div>
-                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="4 years experience">4 years</span>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="skill-tag min-w-[120px] text-left" role="text" aria-label="Terraform">Terraform</div>
-                      <span class="text-gray-600 min-w-[80px] ml-4" role="text" aria-label="3 years experience">3 years</span>
-                    </div>
-                  </div>
+                  <p class="md:hidden text-gray-600 mb-6">気が向き次第、記載させていただきます・・・</p>
                 </div>
               </div>
             </div>
@@ -244,7 +277,7 @@
             <img src="/images/article-nuxt3-600x400.webp" alt="Article Nuxt3" class="w-full h-48 object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-2">技術記事閲覧サイト</h3>
-              <p class="text-gray-600 mb-4">Qiita / Zenn / note の技術記事を閲覧するためのサイトです。</p>
+              <p class="text-gray-600 mb-4">Qiita／Zenn／note の技術記事を閲覧するためのサイトです。</p>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink to="https://shiminori-tec-articles.onrender.com/" class="text-blue-600 hover:text-blue-800 font-medium"
                   >View Site →</NuxtLink
@@ -267,7 +300,7 @@
                 <NuxtLink to="https://www.npmjs.com/package/@google/generative-ai" target="_blank" class="text-blue-600 hover:text-blue-800"
                   >@google/generative-ai</NuxtLink
                 >
-                を使用して、画像を解析させ、登録を補助します。 その他、フォームからの入力も行えます。
+                を使用して／画像を解析させ／登録を補助します。 その他／フォームからの入力も行えます。
               </p>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink to="https://book-realm-xi.vercel.app/" class="text-blue-600 hover:text-blue-800 font-medium"
@@ -288,7 +321,7 @@
               <h3 class="text-xl font-semibold mb-2">Front UI Parts</h3>
               <p class="text-gray-600 mb-4">
                 Vue3 + Vite における UI ライブラリ。<br />
-                パッケージ公開を目的とし、業務でも使用できるための練習用として作成したパッケージです。
+                パッケージ公開を目的とし／業務でも使用できるための練習用として作成したパッケージです。
               </p>
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink
