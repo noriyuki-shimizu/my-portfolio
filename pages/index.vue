@@ -64,9 +64,10 @@
       <!-- Skills Timeline Section -->
       <section id="skills" class="mb-20" aria-labelledby="skills-title">
         <h2 id="skills-title" class="text-3xl font-bold text-gray-900 mb-8">Skills Timeline</h2>
-        <div class="relative">
+        <!-- <div class="relative"> -->
+        <div class="relative bg-white rounded-lg shadow-lg p-8">
           <!-- Timeline Line -->
-          <div class="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 h-full w-1 bg-gray-200"></div>
+          <div class="absolute md:left-1/2 left-8 transform md:-translate-x-1/2 h-[calc(100%-4rem)] w-1 bg-gray-200"></div>
 
           <!-- Timeline Items -->
           <div class="space-y-16">
