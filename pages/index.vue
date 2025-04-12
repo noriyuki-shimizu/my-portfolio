@@ -279,12 +279,18 @@
               <h3 class="text-xl font-semibold mb-2">技術記事閲覧サイト</h3>
               <p class="text-gray-600 mb-4">Qiita／Zenn／note の技術記事を閲覧するためのサイトです。</p>
               <div class="flex justify-between items-center mb-4">
-                <NuxtLink to="https://shiminori-tec-articles.onrender.com/" class="text-blue-600 hover:text-blue-800 font-medium"
+                <NuxtLink
+                  to="https://shiminori-tec-articles.onrender.com/"
+                  target="_blank"
+                  class="text-blue-600 hover:text-blue-800 font-medium"
                   >View Site →</NuxtLink
                 >
               </div>
               <div class="flex justify-between items-center mb-4">
-                <NuxtLink href="https://github.com/noriyuki-shimizu/article-nuxt3" class="text-blue-600 hover:text-blue-800 font-medium"
+                <NuxtLink
+                  href="https://github.com/noriyuki-shimizu/article-nuxt3"
+                  target="_blank"
+                  class="text-blue-600 hover:text-blue-800 font-medium"
                   >Repository →</NuxtLink
                 >
               </div>
@@ -303,12 +309,15 @@
                 を使用して／画像を解析させ／登録を補助します。 その他／フォームからの入力も行えます。
               </p>
               <div class="flex justify-between items-center mb-4">
-                <NuxtLink to="https://book-realm-xi.vercel.app/" class="text-blue-600 hover:text-blue-800 font-medium"
+                <NuxtLink to="https://book-realm-xi.vercel.app/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium"
                   >View Site →</NuxtLink
                 >
               </div>
               <div class="flex justify-between items-center mb-4">
-                <NuxtLink href="https://github.com/noriyuki-shimizu/book-realm" class="text-blue-600 hover:text-blue-800 font-medium"
+                <NuxtLink
+                  href="https://github.com/noriyuki-shimizu/book-realm"
+                  target="_blank"
+                  class="text-blue-600 hover:text-blue-800 font-medium"
                   >Repository →</NuxtLink
                 >
               </div>
@@ -326,12 +335,16 @@
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink
                   to="https://noriyuki-shimizu.github.io/front-ui-parts/?path=/docs/data-display-empty--docs"
+                  target="_blank"
                   class="text-blue-600 hover:text-blue-800 font-medium"
                   >View Site →</NuxtLink
                 >
               </div>
               <div class="flex justify-between items-center mb-4">
-                <NuxtLink href="https://www.npmjs.com/package/front-ui-parts" class="text-blue-600 hover:text-blue-800 font-medium"
+                <NuxtLink
+                  href="https://www.npmjs.com/package/front-ui-parts"
+                  target="_blank"
+                  class="text-blue-600 hover:text-blue-800 font-medium"
                   >npm Package →</NuxtLink
                 >
               </div>
@@ -349,6 +362,7 @@
               <div class="flex justify-between items-center mb-4">
                 <NuxtLink
                   href="https://github.com/noriyuki-shimizu/remo-web2/tree/main"
+                  target="_blank"
                   class="text-blue-600 hover:text-blue-800 font-medium"
                   >Repository →</NuxtLink
                 >
