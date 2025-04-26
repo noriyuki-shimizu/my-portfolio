@@ -369,6 +369,25 @@
               </div>
             </div>
           </article>
+
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="/images/a11y-test-mcp-600x400.webp" alt="a11y test MCP Server" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">a11y test MCP</h3>
+              <p class="text-gray-600 mb-4">
+                アクセシビリティテストを行うための MCP サーバです。<br />
+                複数のリンクに対応しており、WCAG のレベルも指定できます。
+              </p>
+              <div class="flex justify-between items-center mb-4">
+                <NuxtLink
+                  href="https://www.npmjs.com/package/a11y-test-mcp?activeTab=readme"
+                  target="_blank"
+                  class="text-blue-600 hover:text-blue-800 font-medium"
+                  >npm Package →</NuxtLink
+                >
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
