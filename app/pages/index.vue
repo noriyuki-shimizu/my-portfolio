@@ -325,6 +325,27 @@
           </article>
 
           <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="/images/audio-scribe-600x400.webp" alt="Audio Scribe" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Audio Scribe</h3>
+              <p class="text-gray-600 mb-4">MTG（会議）などの人の音声を読み取り、画面にリアルタイムで文字起こしするサービスです。</p>
+              <div class="flex justify-between items-center mb-4">
+                <NuxtLink to="https://audio-scribe-ten.vercel.app/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium"
+                  >View Site →</NuxtLink
+                >
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <NuxtLink
+                  href="https://github.com/noriyuki-shimizu/audio-scribe"
+                  target="_blank"
+                  class="text-blue-600 hover:text-blue-800 font-medium"
+                  >Repository →</NuxtLink
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden">
             <img src="/images/front-ui-parts-600x400.webp" alt="Article Nuxt3" class="w-full h-48 object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-2">Front UI Parts</h3>
