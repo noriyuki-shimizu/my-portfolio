@@ -7,7 +7,7 @@
   },
 
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
 
   "eslint.validate": ["javascript", "typescript", "vue"],
@@ -20,5 +20,14 @@
   "javascript.format.enable": false,
   "typescript.format.enable": false,
 
-  "typescript.referencesCodeLens.enabled": true
+  "typescript.referencesCodeLens.enabled": true,
+
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "必ず日本語で簡潔に記述してください"
+    },
+    {
+      "text": "コミットメッセージは、最初にConventional Commitsに則って記述してください"
+    }
+  ]
 }
