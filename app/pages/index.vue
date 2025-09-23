@@ -412,6 +412,25 @@
               </div>
             </div>
           </article>
+
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="/images/perf-audit-cli.webp" alt="Performance Audit CLI Tool" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Performance Audit CLI Tool</h3>
+              <p class="text-gray-600 mb-4">
+                フロントエンド・SSR(Server-Side
+                Rendering)アプリケーションのパフォーマンスを継続的に監視・分析し、パフォーマンス劣化を防ぐためのCLIツール。
+              </p>
+              <div class="flex justify-between items-center mb-4">
+                <NuxtLink
+                  href="https://www.npmjs.com/package/perf-audit-cli?activeTab=readme"
+                  target="_blank"
+                  class="text-blue-600 hover:text-blue-800 font-medium"
+                  >npm Package →</NuxtLink
+                >
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
