@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 transform group"
-  >
+  <div class="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 transform group">
     <!-- Thumbnail -->
     <div class="relative h-48 bg-gradient-to-br from-purple-500/20 to-pink-500/20 overflow-hidden">
       <img
@@ -22,9 +20,7 @@
       </div>
 
       <!-- Overlay -->
-      <div
-        class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300"
-      ></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300"></div>
     </div>
 
     <!-- Content -->

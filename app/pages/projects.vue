@@ -31,11 +31,7 @@
               >
                 <!-- Project Image -->
                 <div class="relative h-48 overflow-hidden">
-                  <img
-                    :src="project.image"
-                    :alt="project.title"
-                    class="w-full h-full object-cover transition-transform duration-300"
-                  />
+                  <img :src="project.image" :alt="project.title" class="w-full h-full object-cover transition-transform duration-300" />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300"
                   ></div>
@@ -141,7 +137,7 @@ const projects: Project[] = [
     technologies: [
       { name: 'Nuxt.js', color: 'green' },
       { name: 'Vue.js', color: 'green' },
-      { name: 'TypeScript', color: 'blue' },
+      { name: 'TypeScript', color: 'blue' }
     ],
     demoUrl: 'https://shiminori-tec-articles.onrender.com/',
     repositoryUrl: 'https://github.com/noriyuki-shimizu/article-nuxt3',

@@ -102,7 +102,8 @@ const presentations: Presentation[] = [
     date: '2025.10.25',
     venue: 'Vue Fes Japan 2025',
     venueLink: 'https://vuefes.jp/2025/',
-    description: 'Nuxtアプリケーションにおける認証基盤の構築時に重要となるCookieの状態管理について、実装のポイントや注意点を詳しく解説します。',
+    description:
+      'Nuxtアプリケーションにおける認証基盤の構築時に重要となるCookieの状態管理について、実装のポイントや注意点を詳しく解説します。',
     link: 'https://gamma.app/docs/Nuxt-Cookie--3tmj2du5ltzn66z',
     thumbnail: '/images/vue-fes-japan-2025.webp',
     tags: ['Nuxt', 'Vue.js', 'Authentication', 'Cookie', 'State Management']
