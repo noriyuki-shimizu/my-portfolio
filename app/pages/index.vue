@@ -14,7 +14,7 @@ useSeoMeta({
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
       <!-- Animated gradient background -->
-      <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900" aria-hidden="true">
         <div class="absolute inset-0 opacity-20">
           <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent animate-pulse"></div>
         </div>
@@ -27,6 +27,7 @@ useSeoMeta({
             <div class="relative inline-block">
               <div
                 class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-lg opacity-50 animate-pulse-slow"
+                aria-hidden="true"
               ></div>
               <img
                 src="/images/profile-400.webp"
@@ -57,7 +58,7 @@ useSeoMeta({
           </div>
 
           <!-- Social Links -->
-          <div class="mt-12 flex justify-center space-x-6 animate-fade-in-up" style="animation-delay: 0.3s">
+          <div class="mt-12 flex justify-center space-x-6 animate-fade-in-up" style="animation-delay: 0.3s" role="list" aria-label="ソーシャルリンク">
             <SocialLink href="https://github.com/noriyuki-shimizu" icon="github" label="GitHub" />
             <SocialLink href="https://x.com/smnr14785228" icon="twitter" label="Twitter" />
             <SocialLink href="https://qiita.com/shiminori0612" icon="qiita" label="Qiita" />
@@ -72,7 +73,7 @@ useSeoMeta({
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">About Me</h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
+          <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full" aria-hidden="true"></div>
         </div>
 
         <div class="max-w-4xl mx-auto">
@@ -84,7 +85,7 @@ useSeoMeta({
 
                 <div class="space-y-4">
                   <div class="flex items-center space-x-4">
-                    <div class="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full" aria-hidden="true"></div>
                     <div>
                       <span class="text-gray-400">Name:</span>
                       <span class="ml-2 text-white font-medium">清水 紀行</span>
@@ -92,7 +93,7 @@ useSeoMeta({
                   </div>
 
                   <div class="flex items-center space-x-4">
-                    <div class="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full" aria-hidden="true"></div>
                     <div>
                       <span class="text-gray-400">Born:</span>
                       <span class="ml-2 text-white font-medium">1994年06月12日</span>
@@ -100,7 +101,7 @@ useSeoMeta({
                   </div>
 
                   <div class="flex items-center space-x-4">
-                    <div class="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full" aria-hidden="true"></div>
                     <div>
                       <span class="text-gray-400">Role:</span>
                       <span class="ml-2 text-white font-medium">Frontend Engineer</span>
@@ -164,20 +165,23 @@ useSeoMeta({
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">Explore</h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
+          <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full" aria-hidden="true"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto" role="list" aria-label="ナビゲーションカード">
           <!-- Skills Card -->
           <NuxtLink
             to="/skills"
             class="group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-blue-400/50 transition-all duration-300 transform hover:scale-105"
+            role="listitem"
+            aria-label="スキルと経験のページへ移動"
           >
             <div class="text-center">
               <div
                 class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
+                aria-hidden="true"
               >
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -195,12 +199,15 @@ useSeoMeta({
           <NuxtLink
             to="/presentations"
             class="group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-purple-400/50 transition-all duration-300 transform hover:scale-105"
+            role="listitem"
+            aria-label="発表資料のページへ移動"
           >
             <div class="text-center">
               <div
                 class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
+                aria-hidden="true"
               >
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -218,12 +225,15 @@ useSeoMeta({
           <NuxtLink
             to="/projects"
             class="group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-pink-400/50 transition-all duration-300 transform hover:scale-105"
+            role="listitem"
+            aria-label="個人プロジェクトのページへ移動"
           >
             <div class="text-center">
               <div
                 class="w-16 h-16 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
+                aria-hidden="true"
               >
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"

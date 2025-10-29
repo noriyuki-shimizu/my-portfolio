@@ -68,7 +68,7 @@ useSeoMeta({
           <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">
             Presentations
           </h1>
-          <div class="w-32 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full mb-6"></div>
+          <div class="w-32 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full mb-6" aria-hidden="true"></div>
           <p class="text-xl text-gray-400 max-w-3xl mx-auto">外部での登壇や発表資料をまとめています</p>
         </div>
       </div>
@@ -78,13 +78,14 @@ useSeoMeta({
     <section class="pb-20">
       <div class="container mx-auto px-6">
         <div class="max-w-6xl mx-auto">
-          <div v-if="presentations.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div v-if="presentations.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list" aria-label="発表資料一覧">
             <PresentationCard
               v-for="presentation in presentations"
               :key="presentation.id"
               :presentation="presentation"
               class="animate-fade-in-up"
               :style="`animation-delay: ${presentation.id * 0.1}s`"
+              role="listitem"
             />
           </div>
 
@@ -93,8 +94,9 @@ useSeoMeta({
             <div class="mb-8">
               <div
                 class="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 opacity-50"
+                aria-hidden="true"
               >
-                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -103,7 +105,7 @@ useSeoMeta({
                   />
                 </svg>
               </div>
-              <h3 class="text-2xl font-semibold text-white mb-4">準備中です</h3>
+              <h2 class="text-2xl font-semibold text-white mb-4">準備中です</h2>
               <p class="text-gray-400 max-w-md mx-auto">
                 発表資料の準備ができ次第、こちらに掲載予定です。<br />
                 今しばらくお待ちください。
@@ -115,12 +117,14 @@ useSeoMeta({
               <NuxtLink
                 to="/skills"
                 class="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full font-semibold text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                aria-label="スキルページへ移動"
               >
                 スキルを見る
               </NuxtLink>
               <NuxtLink
                 to="/projects"
                 class="px-6 py-3 border-2 border-purple-400 rounded-full font-semibold text-purple-400 hover:bg-purple-400 hover:text-white transition-all duration-300"
+                aria-label="プロジェクトページへ移動"
               >
                 プロジェクトを見る
               </NuxtLink>

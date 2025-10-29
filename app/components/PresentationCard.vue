@@ -9,7 +9,7 @@
         class="w-full h-full object-cover transition-transform duration-300"
       />
       <div v-else class="flex items-center justify-center h-full">
-        <svg class="w-16 h-16 text-purple-400 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-16 h-16 text-purple-400 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -20,14 +20,14 @@
       </div>
 
       <!-- Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300" aria-hidden="true"></div>
     </div>
 
     <!-- Content -->
     <div class="p-6 flex flex-col justify-between" style="height: calc(100% - 12rem);">
       <!-- Date and Venue -->
       <div class="flex items-center text-sm text-gray-400 mb-3">
-        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -39,9 +39,9 @@
       </div>
 
       <!-- Title -->
-      <h3 class="text-xl font-semibold text-white mb-3 transition-colors duration-300">
+      <h2 class="text-xl font-semibold text-white mb-3 transition-colors duration-300">
         {{ presentation.title }}
-      </h3>
+      </h2>
 
       <!-- Description -->
       <p class="text-gray-400 text-sm mb-4 leading-relaxed">
@@ -49,11 +49,13 @@
       </p>
 
       <!-- Tags -->
-      <div class="flex flex-wrap gap-2 mb-6">
+      <div class="flex flex-wrap gap-2 mb-6" role="list" aria-label="発表タグ">
         <span
           v-for="tag in presentation.tags"
           :key="tag"
           class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full border border-purple-500/30"
+          role="listitem"
+          :aria-label="`タグ: ${tag}`"
         >
           {{ tag }}
         </span>
@@ -67,9 +69,10 @@
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center text-purple-400 hover:text-white font-medium transition-colors duration-300"
+            :aria-label="`${presentation.title}の資料を新しいタブで開く`"
           >
             資料を見る
-            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -85,9 +88,10 @@
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center text-purple-400 hover:text-white font-medium transition-colors duration-300"
+            :aria-label="`${presentation.title}のイベント詳細を新しいタブで開く`"
           >
             イベント詳細を見る
-            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"

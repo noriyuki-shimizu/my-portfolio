@@ -1,28 +1,31 @@
 <template>
   <div class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-x-hidden">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-black/10 backdrop-blur-lg border-b border-white/10">
+    <nav class="fixed top-0 w-full z-50 bg-black/10 backdrop-blur-lg border-b border-white/10" role="navigation" aria-label="メインナビゲーション">
       <div class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
           <!-- Logo -->
           <NuxtLink
             to="/"
             class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
+            aria-label="ホームページに戻る"
           >
             Shiminori
           </NuxtLink>
 
           <!-- Desktop Navigation -->
-          <div class="hidden md:flex items-center space-x-8">
-            <NavLink to="/" :active="$route.path === '/'">Home</NavLink>
-            <NavLink to="/skills" :active="$route.path === '/skills'">Skills</NavLink>
-            <NavLink to="/presentations" :active="$route.path === '/presentations'">Presentations</NavLink>
-            <NavLink to="/projects" :active="$route.path === '/projects'">Projects</NavLink>
+          <div class="hidden md:flex items-center space-x-8" role="list">
+            <NavLink to="/" :active="$route.path === '/'" role="listitem">Home</NavLink>
+            <NavLink to="/skills" :active="$route.path === '/skills'" role="listitem">Skills</NavLink>
+            <NavLink to="/presentations" :active="$route.path === '/presentations'" role="listitem">Presentations</NavLink>
+            <NavLink to="/projects" :active="$route.path === '/projects'" role="listitem">Projects</NavLink>
           </div>
 
           <!-- Mobile Menu Button -->
           <button
-            aria-label="Toggle menu"
+            aria-label="モバイルメニューを開く"
+            :aria-expanded="mobileMenuOpen"
+            aria-controls="mobile-menu"
             class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors duration-200"
             @click="toggleMobileMenu"
           >
@@ -42,16 +45,19 @@
 
         <!-- Mobile Navigation -->
         <div
+          id="mobile-menu"
           class="md:hidden overflow-hidden transition-all duration-300"
           :class="{ 'max-h-64 mt-4': mobileMenuOpen, 'max-h-0': !mobileMenuOpen }"
+          role="list"
+          aria-label="モバイルナビゲーション"
         >
           <div class="space-y-4 pb-4">
-            <NavLink to="/" :active="$route.path === '/'" mobile @click="mobileMenuOpen = false">Home</NavLink>
-            <NavLink to="/skills" :active="$route.path === '/skills'" mobile @click="mobileMenuOpen = false">Skills</NavLink>
-            <NavLink to="/presentations" :active="$route.path === '/presentations'" mobile @click="mobileMenuOpen = false"
+            <NavLink to="/" :active="$route.path === '/'" mobile @click="mobileMenuOpen = false" role="listitem">Home</NavLink>
+            <NavLink to="/skills" :active="$route.path === '/skills'" mobile @click="mobileMenuOpen = false" role="listitem">Skills</NavLink>
+            <NavLink to="/presentations" :active="$route.path === '/presentations'" mobile @click="mobileMenuOpen = false" role="listitem"
               >Presentations</NavLink
             >
-            <NavLink to="/projects" :active="$route.path === '/projects'" mobile @click="mobileMenuOpen = false">Projects</NavLink>
+            <NavLink to="/projects" :active="$route.path === '/projects'" mobile @click="mobileMenuOpen = false" role="listitem">Projects</NavLink>
           </div>
         </div>
       </div>
@@ -63,14 +69,14 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-20 border-t border-white/10 bg-black/20 backdrop-blur-sm">
+    <footer class="border-t border-white/10 bg-black/20 backdrop-blur-sm" role="contentinfo">
       <div class="container mx-auto px-6 py-12">
         <div class="text-center">
           <div class="mb-8">
-            <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
+            <h2 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
               Let's Connect
-            </h3>
-            <div class="flex justify-center space-x-6">
+            </h2>
+            <div class="flex justify-center space-x-6" role="list" aria-label="ソーシャルリンク">
               <SocialLink href="https://github.com/noriyuki-shimizu" icon="github" label="GitHub" />
               <SocialLink href="https://x.com/smnr14785228" icon="twitter" label="Twitter" />
               <SocialLink href="https://qiita.com/shiminori0612" icon="qiita" label="Qiita" />
@@ -85,7 +91,7 @@
     </footer>
 
     <!-- Background Effects -->
-    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none" aria-hidden="true">
       <div
         class="absolute top-0 -left-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"
       ></div>

@@ -4,6 +4,8 @@
       'inline-block px-3 py-1 text-xs font-semibold rounded-full border transition-all duration-300 hover:scale-105',
       colorClasses[color] || colorClasses.gray
     ]"
+    role="listitem"
+    :aria-label="`技術: ${tech}`"
   >
     {{ tech }}
   </span>
