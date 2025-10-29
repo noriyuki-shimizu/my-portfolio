@@ -4,6 +4,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
   css: ['@/assets/css/reset.css', '@/assets/css/global.css'],
+  nitro: {
+    prerender: {
+      routes: ['/', '/skills', '/presentations', '/projects']
+    }
+  },
+  ssr: true,
   app: {
     head: {
       htmlAttrs: { lang: 'ja' },
@@ -13,7 +19,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: '清水 紀行のスキルとプロジェクトを紹介するポートフォリオサイト' },
         { name: 'format-detection', content: 'telephone=no' },
-        { name: 'theme-color', content: '#ffffff' },
+        { name: 'theme-color', content: '#0f172a' },
         { property: 'og:description', content: '清水 紀行のスキルとプロジェクトを紹介するポートフォリオサイト' },
         { property: 'og:title', content: 'Noriyuki Shimizu Portfolio' }
       ],

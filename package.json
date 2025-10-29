@@ -9,16 +9,17 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "format": "dprint fmt"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.19",
     "@heroicons/vue": "^2.1.1",
     "@vercel/analytics": "^1.5.0",
-    "nuxt": "^4.0.0"
+    "nuxt": "^4.2.0"
   },
   "devDependencies": {
-    "@nuxt/docs": "^3.17.1",
+    "@nuxt/docs": "^4.2.0",
     "@nuxt/eslint": "^1.2.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@tailwindcss/typography": "^0.5.10",
@@ -29,9 +30,5 @@
     "eslint-import-resolver-typescript": "^4.2.2",
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^16.0.0"
-  },
-  "volta": {
-    "node": "22.14.0",
-    "npm": "10.9.2"
   }
 }
