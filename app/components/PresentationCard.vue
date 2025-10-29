@@ -24,7 +24,7 @@
     </div>
 
     <!-- Content -->
-    <div class="p-6">
+    <div class="p-6 flex flex-col justify-between" style="height: calc(100% - 12rem);">
       <!-- Date and Venue -->
       <div class="flex items-center text-sm text-gray-400 mb-3">
         <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,17 +36,6 @@
           />
         </svg>
         <span>{{ formatDate(presentation.date) }}</span>
-        <span class="mx-2">•</span>
-        <NuxtLink
-          v-if="presentation.venueLink"
-          :to="presentation.venueLink"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="transition-colors duration-300"
-        >
-          {{ presentation.venue }}
-        </NuxtLink>
-        <span v-else>{{ presentation.venue }}</span>
       </div>
 
       <!-- Title -->
@@ -71,23 +60,43 @@
       </div>
 
       <!-- Link -->
-      <div v-if="presentation.link" class="flex justify-between items-center">
-        <NuxtLink
-          :to="presentation.link"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center text-purple-400 hover:text-white font-medium transition-colors duration-300"
-        >
-          資料を見る
-          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-            />
-          </svg>
-        </NuxtLink>
+      <div class="flex gap-2 flex-col">
+        <div v-if="presentation.link" class="flex justify-between items-center">
+          <NuxtLink
+            :to="presentation.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center text-purple-400 hover:text-white font-medium transition-colors duration-300"
+          >
+            資料を見る
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </NuxtLink>
+        </div>
+        <div v-if="presentation.venueLink" class="flex justify-between items-center">
+          <NuxtLink
+            :to="presentation.venueLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center text-purple-400 hover:text-white font-medium transition-colors duration-300"
+          >
+            イベント詳細を見る
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>

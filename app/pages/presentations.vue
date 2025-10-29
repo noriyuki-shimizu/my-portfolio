@@ -107,6 +107,18 @@ const presentations: Presentation[] = [
     link: 'https://gamma.app/docs/Nuxt-Cookie--3tmj2du5ltzn66z',
     thumbnail: '/images/vue-fes-japan-2025.webp',
     tags: ['Nuxt', 'Vue.js', 'Authentication', 'Cookie', 'State Management']
+  },
+  {
+    id: 2,
+    title: '勢いに乗って MCP サーバ作ってみた',
+    date: '2025.05.29',
+    venue: 'TSKaigi 2025 本編で話せなかったこと、話し足りなかったこと',
+    venueLink: 'https://freee.connpass.com/event/351699/',
+    description:
+      '@modelcontextprotocol/sdk を活用して、独自のMCPサーバを構築した経験を共有します。',
+    link: 'https://gamma.app/docs/MCP--ibrd92jgmyanm2l',
+    thumbnail: '/images/ts-kaigi-2025-after-talk.png',
+    tags: ['Node.js', 'TypeScript', 'MCP', 'Playwright', 'a11y', 'zod']
   }
 ]
 
