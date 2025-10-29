@@ -1,3 +1,14 @@
+<script setup lang="ts">
+// Meta tags for SEO
+useSeoMeta({
+  title: 'Skills & Experience - Shiminori Portfolio',
+  description: 'Shiminoriの技術スキルと職歴をタイムライン形式で紹介。フロントエンド、バックエンド、DevOpsの経験を詳しく解説しています。',
+  ogTitle: 'Skills & Experience - Shiminori Portfolio',
+  ogDescription: 'Shiminoriの技術スキルと職歴をタイムライン形式で紹介。フロントエンド、バックエンド、DevOpsの経験を詳しく解説しています。',
+  ogType: 'website'
+})
+</script>
+
 <template>
   <div class="min-h-screen">
     <!-- Header Section -->
@@ -481,13 +492,3 @@
     </section>
   </div>
 </template>
-
-<script setup lang="ts">
-// Meta tags for SEO
-useSeoMeta({
-  title: 'Skills & Experience - Noriyuki Shimizu Portfolio',
-  description: '清水 紀行の技術スキルと職歴をタイムライン形式で紹介。フロントエンド、バックエンド、DevOpsの経験を詳しく解説しています。',
-  ogTitle: 'Skills & Experience - Noriyuki Shimizu Portfolio',
-  ogDescription: '清水 紀行の技術スキルと職歴をタイムライン形式で紹介。フロントエンド、バックエンド、DevOpsの経験を詳しく解説しています。'
-})
-</script>

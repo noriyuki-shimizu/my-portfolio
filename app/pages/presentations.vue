@@ -1,3 +1,64 @@
+<script setup lang="ts">
+/** 発表資料のデータ型 */
+interface Presentation {
+  /** ID */
+  id: number
+  /** タイトル */
+  title: string
+  /** 開催日 */
+  date: string
+  /** 開催場所 */
+  venue: string
+  /** イベントのリンク */
+  venueLink?: string
+  /** 概要 */
+  description: string
+  /** 資料のリンク */
+  link?: string
+  /** サムネイル画像 */
+  thumbnail?: string
+  /** タグ */
+  tags: string[]
+}
+
+/** 発表資料のデータ（将来的にはAPIやCMSから取得） */
+const presentations: Presentation[] = [
+  {
+    id: 1,
+    title: 'Nuxt 認証基盤作成における Cookie 状態管理のポイント',
+    date: '2025.10.25',
+    venue: 'Vue Fes Japan 2025',
+    venueLink: 'https://vuefes.jp/2025/',
+    description:
+      'Nuxtアプリケーションにおける認証基盤の構築時に重要となるCookieの状態管理について、実装のポイントや注意点を詳しく解説します。',
+    link: 'https://gamma.app/docs/Nuxt-Cookie--3tmj2du5ltzn66z',
+    thumbnail: '/images/vue-fes-japan-2025.webp',
+    tags: ['Nuxt', 'Vue.js', 'Authentication', 'Cookie', 'State Management']
+  },
+  {
+    id: 2,
+    title: '勢いに乗って MCP サーバ作ってみた',
+    date: '2025.05.29',
+    venue: 'TSKaigi 2025 本編で話せなかったこと、話し足りなかったこと',
+    venueLink: 'https://freee.connpass.com/event/351699/',
+    description:
+      '@modelcontextprotocol/sdk を活用して、独自のMCPサーバを構築した経験を共有します。',
+    link: 'https://gamma.app/docs/MCP--ibrd92jgmyanm2l',
+    thumbnail: '/images/ts-kaigi-2025-after-talk.webp',
+    tags: ['Node.js', 'TypeScript', 'MCP', 'Playwright', 'a11y', 'zod']
+  }
+]
+
+// Meta tags for SEO
+useSeoMeta({
+  title: 'Presentations - Shiminori Portfolio',
+  description: 'Shiminoriの外部登壇や発表資料をまとめています。技術的な知見や経験をシェアした内容をご覧いただけます。',
+  ogTitle: 'Presentations - Shiminori Portfolio',
+  ogDescription: 'Shiminoriの外部登壇や発表資料をまとめています。技術的な知見や経験をシェアした内容をご覧いただけます。',
+  ogType: 'website'
+})
+</script>
+
 <template>
   <div class="min-h-screen">
     <!-- Header Section -->
@@ -70,63 +131,3 @@
     </section>
   </div>
 </template>
-
-<script setup lang="ts">
-/** 発表資料のデータ型 */
-interface Presentation {
-  /** ID */
-  id: number
-  /** タイトル */
-  title: string
-  /** 開催日 */
-  date: string
-  /** 開催場所 */
-  venue: string
-  /** イベントのリンク */
-  venueLink?: string
-  /** 概要 */
-  description: string
-  /** 資料のリンク */
-  link?: string
-  /** サムネイル画像 */
-  thumbnail?: string
-  /** タグ */
-  tags: string[]
-}
-
-/** 発表資料のデータ（将来的にはAPIやCMSから取得） */
-const presentations: Presentation[] = [
-  {
-    id: 1,
-    title: 'Nuxt 認証基盤作成における Cookie 状態管理のポイント',
-    date: '2025.10.25',
-    venue: 'Vue Fes Japan 2025',
-    venueLink: 'https://vuefes.jp/2025/',
-    description:
-      'Nuxtアプリケーションにおける認証基盤の構築時に重要となるCookieの状態管理について、実装のポイントや注意点を詳しく解説します。',
-    link: 'https://gamma.app/docs/Nuxt-Cookie--3tmj2du5ltzn66z',
-    thumbnail: '/images/vue-fes-japan-2025.webp',
-    tags: ['Nuxt', 'Vue.js', 'Authentication', 'Cookie', 'State Management']
-  },
-  {
-    id: 2,
-    title: '勢いに乗って MCP サーバ作ってみた',
-    date: '2025.05.29',
-    venue: 'TSKaigi 2025 本編で話せなかったこと、話し足りなかったこと',
-    venueLink: 'https://freee.connpass.com/event/351699/',
-    description:
-      '@modelcontextprotocol/sdk を活用して、独自のMCPサーバを構築した経験を共有します。',
-    link: 'https://gamma.app/docs/MCP--ibrd92jgmyanm2l',
-    thumbnail: '/images/ts-kaigi-2025-after-talk.png',
-    tags: ['Node.js', 'TypeScript', 'MCP', 'Playwright', 'a11y', 'zod']
-  }
-]
-
-// Meta tags for SEO
-useSeoMeta({
-  title: 'Presentations - Noriyuki Shimizu Portfolio',
-  description: '清水 紀行の外部登壇や発表資料をまとめています。技術的な知見や経験をシェアした内容をご覧いただけます。',
-  ogTitle: 'Presentations - Noriyuki Shimizu Portfolio',
-  ogDescription: '清水 紀行の外部登壇や発表資料をまとめています。技術的な知見や経験をシェアした内容をご覧いただけます。'
-})
-</script>

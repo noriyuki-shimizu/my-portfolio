@@ -1,3 +1,14 @@
+<script setup lang="ts">
+// Meta tags for SEO
+useSeoMeta({
+  title: 'Shiminori - Frontend Engineer Portfolio',
+  description: 'Shiminoriのポートフォリオサイト。フロントエンドエンジニアとしてのスキル、経験、プロジェクトを紹介しています。',
+  ogTitle: 'Shiminori - Frontend Engineer Portfolio',
+  ogDescription: 'Shiminoriのポートフォリオサイト。フロントエンドエンジニアとしてのスキル、経験、プロジェクトを紹介しています。',
+  ogType: 'website'
+})
+</script>
+
 <template>
   <div>
     <!-- Hero Section -->
@@ -230,14 +241,3 @@
     </section>
   </div>
 </template>
-
-<script setup lang="ts">
-// Meta tags for SEO
-useSeoMeta({
-  title: 'Noriyuki Shimizu - Frontend Engineer Portfolio',
-  description: '清水 紀行のポートフォリオサイト。フロントエンドエンジニアとしてのスキル、経験、プロジェクトを紹介しています。',
-  ogTitle: 'Noriyuki Shimizu - Frontend Engineer Portfolio',
-  ogDescription: '清水 紀行のポートフォリオサイト。フロントエンドエンジニアとしてのスキル、経験、プロジェクトを紹介しています。',
-  ogType: 'website'
-})
-</script>
