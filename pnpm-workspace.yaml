@@ -1,5 +1,0 @@
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - dprint
-  - esbuild
-  - unrs-resolver
