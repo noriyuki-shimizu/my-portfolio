@@ -41,8 +41,7 @@ const presentations: Presentation[] = [
     date: '2025.05.29',
     venue: 'TSKaigi 2025 本編で話せなかったこと、話し足りなかったこと',
     venueLink: 'https://freee.connpass.com/event/351699/',
-    description:
-      '@modelcontextprotocol/sdk を活用して、独自のMCPサーバを構築した経験を共有します。',
+    description: '@modelcontextprotocol/sdk を活用して、独自のMCPサーバを構築した経験を共有します。',
     link: 'https://gamma.app/docs/MCP--ibrd92jgmyanm2l',
     thumbnail: '/images/ts-kaigi-2025-after-talk.webp',
     tags: ['Node.js', 'TypeScript', 'MCP', 'Playwright', 'a11y', 'zod']
@@ -78,7 +77,12 @@ useSeoMeta({
     <section class="pb-20">
       <div class="container mx-auto px-6">
         <div class="max-w-6xl mx-auto">
-          <div v-if="presentations.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list" aria-label="発表資料一覧">
+          <div
+            v-if="presentations.length > 0"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            role="list"
+            aria-label="発表資料一覧"
+          >
             <PresentationCard
               v-for="presentation in presentations"
               :key="presentation.id"

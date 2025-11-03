@@ -20,11 +20,14 @@
       </div>
 
       <!-- Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300" aria-hidden="true"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300"
+        aria-hidden="true"
+      ></div>
     </div>
 
     <!-- Content -->
-    <div class="p-6 flex flex-col justify-between" style="height: calc(100% - 12rem);">
+    <div class="p-6 flex flex-col justify-between" style="height: calc(100% - 12rem)">
       <!-- Date and Venue -->
       <div class="flex items-center text-sm text-gray-400 mb-3">
         <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -68,7 +71,7 @@
             :to="presentation.link"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center text-purple-400 hover:text-white font-medium transition-colors duration-300"
+            class="flex items-center justify-center flex-1 min-w-[120px] px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             :aria-label="`${presentation.title}の資料を新しいタブで開く`"
           >
             資料を見る
@@ -87,7 +90,7 @@
             :to="presentation.venueLink"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center text-purple-400 hover:text-white font-medium transition-colors duration-300"
+            class="flex items-center justify-center flex-1 min-w-[120px] px-4 py-2 border-2 border-purple-400 rounded-lg font-semibold text-purple-400 bg-purple-400 text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             :aria-label="`${presentation.title}のイベント詳細を新しいタブで開く`"
           >
             イベント詳細を見る

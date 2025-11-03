@@ -1,7 +1,11 @@
 <template>
   <div class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-x-hidden">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-black/10 backdrop-blur-lg border-b border-white/10" role="navigation" aria-label="メインナビゲーション">
+    <nav
+      class="fixed top-0 w-full z-50 bg-black/10 backdrop-blur-lg border-b border-white/10"
+      role="navigation"
+      aria-label="メインナビゲーション"
+    >
       <div class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
           <!-- Logo -->
@@ -52,12 +56,16 @@
           aria-label="モバイルナビゲーション"
         >
           <div class="space-y-4 pb-4">
-            <NavLink to="/" :active="$route.path === '/'" mobile @click="mobileMenuOpen = false" role="listitem">Home</NavLink>
-            <NavLink to="/skills" :active="$route.path === '/skills'" mobile @click="mobileMenuOpen = false" role="listitem">Skills</NavLink>
-            <NavLink to="/presentations" :active="$route.path === '/presentations'" mobile @click="mobileMenuOpen = false" role="listitem"
+            <NavLink to="/" :active="$route.path === '/'" mobile role="listitem" @click="mobileMenuOpen = false">Home</NavLink>
+            <NavLink to="/skills" :active="$route.path === '/skills'" mobile role="listitem" @click="mobileMenuOpen = false"
+              >Skills</NavLink
+            >
+            <NavLink to="/presentations" :active="$route.path === '/presentations'" mobile role="listitem" @click="mobileMenuOpen = false"
               >Presentations</NavLink
             >
-            <NavLink to="/projects" :active="$route.path === '/projects'" mobile @click="mobileMenuOpen = false" role="listitem">Projects</NavLink>
+            <NavLink to="/projects" :active="$route.path === '/projects'" mobile role="listitem" @click="mobileMenuOpen = false"
+              >Projects</NavLink
+            >
           </div>
         </div>
       </div>

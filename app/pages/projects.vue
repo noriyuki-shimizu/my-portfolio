@@ -158,7 +158,10 @@ useSeoMeta({
           >
             Personal Projects
           </h1>
-          <div class="w-32 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mx-auto rounded-full mb-6" aria-hidden="true"></div>
+          <div
+            class="w-32 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mx-auto rounded-full mb-6"
+            aria-hidden="true"
+          ></div>
           <p class="text-xl text-gray-400 max-w-3xl mx-auto">個人で開発したプロジェクトやツールをご紹介します</p>
         </div>
       </div>
@@ -181,7 +184,11 @@ useSeoMeta({
               >
                 <!-- Project Image -->
                 <div class="relative h-48 overflow-hidden">
-                  <img :src="project.image" :alt="`${project.title}のプロジェクト画像`" class="w-full h-full object-cover transition-transform duration-300" />
+                  <img
+                    :src="project.image"
+                    :alt="`${project.title}のプロジェクト画像`"
+                    class="w-full h-full object-cover transition-transform duration-300"
+                  />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300"
                     aria-hidden="true"
@@ -215,10 +222,18 @@ useSeoMeta({
                       :to="project.demoUrl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="flex-1 min-w-[120px] text-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                      class="flex items-center justify-center flex-1 min-w-[120px] px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                       :aria-label="`${project.title}のデモサイトを新しいタブで開く`"
                     >
                       View Site
+                      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
                     </NuxtLink>
 
                     <NuxtLink
@@ -226,10 +241,18 @@ useSeoMeta({
                       :to="project.repositoryUrl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="flex-1 min-w-[120px] text-center px-4 py-2 border-2 border-purple-400 rounded-lg font-semibold text-purple-400 bg-purple-400 text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                      class="flex items-center justify-center flex-1 min-w-[120px] px-4 py-2 border-2 border-purple-400 rounded-lg font-semibold text-purple-400 bg-purple-400 text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                       :aria-label="`${project.title}のリポジトリを新しいタブで開く`"
                     >
                       Repository
+                      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
                     </NuxtLink>
 
                     <NuxtLink
@@ -237,10 +260,18 @@ useSeoMeta({
                       :to="project.npmUrl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="flex-1 min-w-[120px] text-center px-4 py-2 border-2 border-red-400 rounded-lg font-semibold text-red-400 bg-red-400 text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                      class="flex items-center justify-center flex-1 min-w-[120px] px-4 py-2 border-2 border-red-400 rounded-lg font-semibold text-red-400 bg-red-400 text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                       :aria-label="`${project.title}のnpmパッケージを新しいタブで開く`"
                     >
-                      npm Package
+                      npm
+                      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
                     </NuxtLink>
                   </div>
                 </div>

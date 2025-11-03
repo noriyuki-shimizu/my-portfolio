@@ -50,17 +50,16 @@ useSeoMeta({
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                   <!-- Content (Right side on desktop) -->
                   <div class="lg:order-2 lg:pl-16">
-                    <div
-                      class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-blue-400/30 hover:bg-white/10 transition-all duration-300 group"
-                    >
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-blue-400/30 group">
                       <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-3 h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse" aria-hidden="true"></div>
+                        <div
+                          class="w-3 h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse"
+                          aria-hidden="true"
+                        ></div>
                         <span class="text-blue-400 font-semibold text-sm uppercase tracking-wide">2021年4月 〜 現在</span>
                       </div>
 
-                      <h2 class="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors duration-300">
-                        官公庁・自治体の入札・落札情報サービス開発
-                      </h2>
+                      <h2 class="text-2xl font-bold text-white mb-4">官公庁・自治体の入札・落札情報サービス開発</h2>
 
                       <p class="text-gray-400 mb-6 leading-relaxed">
                         官公庁や自治体などの入札情報や落札情報を提供するサービスのアプリケーション開発をさせていただいております。
@@ -72,7 +71,13 @@ useSeoMeta({
                         <!-- Frontend -->
                         <div>
                           <h3 class="text-white font-semibold mb-3 flex items-center">
-                            <svg class="w-5 h-5 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg
+                              class="w-5 h-5 text-blue-400 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
                               <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -93,7 +98,13 @@ useSeoMeta({
                         <!-- DevOps -->
                         <div>
                           <h3 class="text-white font-semibold mb-3 flex items-center">
-                            <svg class="w-5 h-5 text-purple-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg
+                              class="w-5 h-5 text-purple-400 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
                               <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -189,17 +200,13 @@ useSeoMeta({
 
                   <!-- Content (Left side on desktop) -->
                   <div class="lg:order-1 lg:pr-16">
-                    <div
-                      class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-purple-400/30 hover:bg-white/10 transition-all duration-300 group"
-                    >
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-purple-400/30 group">
                       <div class="flex items-center space-x-3 mb-4">
                         <div class="w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full" aria-hidden="true"></div>
                         <span class="text-purple-400 font-semibold text-sm uppercase tracking-wide">2020年2月 〜 2021年4月</span>
                       </div>
 
-                      <h2 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors duration-300">
-                        データ分析システムの開発
-                      </h2>
+                      <h2 class="text-2xl font-bold text-white mb-4">データ分析システムの開発</h2>
 
                       <p class="text-gray-400 mb-6 leading-relaxed">
                         データの繋がりを可視化するデータ分析システムの開発に携わりました。
@@ -211,7 +218,13 @@ useSeoMeta({
                         <!-- Backend -->
                         <div>
                           <h3 class="text-white font-semibold mb-3 flex items-center">
-                            <svg class="w-5 h-5 text-orange-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg
+                              class="w-5 h-5 text-orange-400 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
                               <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -249,7 +262,13 @@ useSeoMeta({
                         <!-- Tools -->
                         <div>
                           <h3 class="text-white font-semibold mb-3 flex items-center">
-                            <svg class="w-5 h-5 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg
+                              class="w-5 h-5 text-blue-400 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
                               <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -286,17 +305,13 @@ useSeoMeta({
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                   <!-- Content (Right side on desktop) -->
                   <div class="lg:order-2 lg:pl-16">
-                    <div
-                      class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-pink-400/30 hover:bg-white/10 transition-all duration-300 group"
-                    >
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-pink-400/30 group">
                       <div class="flex items-center space-x-3 mb-4">
                         <div class="w-3 h-3 bg-gradient-to-r from-pink-400 to-orange-400 rounded-full" aria-hidden="true"></div>
                         <span class="text-pink-400 font-semibold text-sm uppercase tracking-wide">2019年5月 〜 2020年1月</span>
                       </div>
 
-                      <h2 class="text-2xl font-bold text-white mb-4 group-hover:text-pink-400 transition-colors duration-300">
-                        飲食店の注文管理システム開発
-                      </h2>
+                      <h2 class="text-2xl font-bold text-white mb-4">飲食店の注文管理システム開発</h2>
 
                       <p class="text-gray-400 mb-6 leading-relaxed">
                         飲食店などで用いるタブレットでの注文アプリの管理システム開発に携わりました。 バックエンド側でREST
@@ -308,7 +323,13 @@ useSeoMeta({
                         <!-- Backend -->
                         <div>
                           <h3 class="text-white font-semibold mb-3 flex items-center">
-                            <svg class="w-5 h-5 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg
+                              class="w-5 h-5 text-green-400 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
                               <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -328,7 +349,13 @@ useSeoMeta({
                         <!-- Frontend -->
                         <div>
                           <h3 class="text-white font-semibold mb-3 flex items-center">
-                            <svg class="w-5 h-5 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg
+                              class="w-5 h-5 text-blue-400 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
                               <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -347,7 +374,13 @@ useSeoMeta({
                         <!-- Cloud -->
                         <div>
                           <h3 class="text-white font-semibold mb-3 flex items-center">
-                            <svg class="w-5 h-5 text-yellow-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg
+                              class="w-5 h-5 text-yellow-400 mr-2"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
                               <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -417,13 +450,10 @@ useSeoMeta({
         <div class="max-w-4xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list" aria-label="コア技術一覧">
             <!-- Frontend -->
-            <div
-              class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group"
-              role="listitem"
-            >
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 group" role="listitem">
               <div class="text-center">
                 <div
-                  class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+                  class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4"
                   aria-hidden="true"
                 >
                   <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -431,7 +461,7 @@ useSeoMeta({
                   </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-white mb-4">Frontend</h3>
-                <div class="space-y-2" role="list" aria-label="フロントエンド技術一覧">
+                <div class="flex flex-wrap gap-2" role="list" aria-label="フロントエンド技術一覧">
                   <TechBadge tech="Vue.js / Nuxt.js" color="green" />
                   <TechBadge tech="React.js" color="blue" />
                   <TechBadge tech="TypeScript" color="blue" />
@@ -441,13 +471,10 @@ useSeoMeta({
             </div>
 
             <!-- Backend -->
-            <div
-              class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group"
-              role="listitem"
-            >
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 group" role="listitem">
               <div class="text-center">
                 <div
-                  class="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+                  class="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4"
                   aria-hidden="true"
                 >
                   <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -460,7 +487,7 @@ useSeoMeta({
                   </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-white mb-4">Backend</h3>
-                <div class="space-y-2" role="list" aria-label="バックエンド技術一覧">
+                <div class="flex flex-wrap gap-2" role="list" aria-label="バックエンド技術一覧">
                   <TechBadge tech="Node.js" color="green" />
                   <TechBadge tech="Java" color="orange" />
                   <TechBadge tech="Spring Boot" color="green" />
@@ -470,13 +497,10 @@ useSeoMeta({
             </div>
 
             <!-- DevOps -->
-            <div
-              class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group"
-              role="listitem"
-            >
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 group" role="listitem">
               <div class="text-center">
                 <div
-                  class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+                  class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4"
                   aria-hidden="true"
                 >
                   <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -489,7 +513,7 @@ useSeoMeta({
                   </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-white mb-4">DevOps</h3>
-                <div class="space-y-2" role="list" aria-label="DevOps技術一覧">
+                <div class="flex flex-wrap gap-2" role="list" aria-label="DevOps技術一覧">
                   <TechBadge tech="AWS" color="orange" />
                   <TechBadge tech="Docker" color="blue" />
                   <TechBadge tech="Terraform" color="purple" />

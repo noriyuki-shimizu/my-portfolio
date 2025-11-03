@@ -58,7 +58,12 @@ useSeoMeta({
           </div>
 
           <!-- Social Links -->
-          <div class="mt-12 flex justify-center space-x-6 animate-fade-in-up" style="animation-delay: 0.3s" role="list" aria-label="ソーシャルリンク">
+          <div
+            class="mt-12 flex justify-center space-x-6 animate-fade-in-up"
+            style="animation-delay: 0.3s"
+            role="list"
+            aria-label="ソーシャルリンク"
+          >
             <SocialLink href="https://github.com/noriyuki-shimizu" icon="github" label="GitHub" />
             <SocialLink href="https://x.com/smnr14785228" icon="twitter" label="Twitter" />
             <SocialLink href="https://qiita.com/shiminori0612" icon="qiita" label="Qiita" />
@@ -80,7 +85,7 @@ useSeoMeta({
           <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <!-- Personal Info -->
             <div class="space-y-8 animate-slide-in-left">
-              <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <h3 class="text-2xl font-semibold text-blue-400 mb-6">Personal Information</h3>
 
                 <div class="space-y-4">
@@ -113,7 +118,7 @@ useSeoMeta({
 
             <!-- Philosophy -->
             <div class="animate-slide-in-right">
-              <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <h3 class="text-2xl font-semibold text-purple-400 mb-6">My Philosophy</h3>
 
                 <div class="space-y-6">
