@@ -26,7 +26,7 @@ const presentations: Presentation[] = [
   {
     id: 1,
     title: 'Nuxt 認証基盤作成における Cookie 状態管理のポイント',
-    date: '2025.10.25',
+    date: '2025年10月25日',
     venue: 'Vue Fes Japan 2025',
     venueLink: 'https://vuefes.jp/2025/',
     description:
@@ -38,7 +38,7 @@ const presentations: Presentation[] = [
   {
     id: 2,
     title: '勢いに乗って MCP サーバ作ってみた',
-    date: '2025.05.29',
+    date: '2025年05月29日',
     venue: 'TSKaigi 2025 本編で話せなかったこと、話し足りなかったこと',
     venueLink: 'https://freee.connpass.com/event/351699/',
     description: '@modelcontextprotocol/sdk を活用して、独自のMCPサーバを構築した経験を共有します。',
