@@ -53,7 +53,7 @@ useSeoMeta({
 
             <p class="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
               最新の技術にアンテナを貼り、常に学び続ける姿勢を大切にしています。<br />
-              ユーザーエクスペリエンスを重視した、美しく機能的なWebアプリケーションの開発を得意としています。
+              UXに優れたWebアプリ開発が強みです。
             </p>
           </div>
 
