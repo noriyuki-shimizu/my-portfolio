@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxtjs/sitemap'],
   css: ['@/assets/css/reset.css', '@/assets/css/global.css'],
   nitro: {
     prerender: {
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         { property: 'og:site_name', content: 'Shiminori Portfolio Site' },
         { property: 'og:description', content: 'Shiminoriのポートフォリオサイトです。' },
         { property: 'og:title', content: 'Shiminori Portfolio' },
-        { property: 'og:image', content: `${import.meta.env.APPLICATION_BASE_URL}/images/top-view.webp` },
+        { property: 'og:image', content: `${import.meta.env.NUXT_SITE_URL}/images/top-view.webp` },
         { name: 'twitter:card', content: 'summary_large_image' }
       ],
       link: [
