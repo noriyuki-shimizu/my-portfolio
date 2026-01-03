@@ -8,6 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "clean": "nuxt cleanup",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "dprint fmt"
