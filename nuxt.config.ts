@@ -2,13 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxtjs/sitemap'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxtjs/sitemap', '@nuxtjs/robots'],
   css: ['@/assets/css/reset.css', '@/assets/css/global.css'],
-  nitro: {
-    prerender: {
-      routes: ['/', '/skills', '/presentations', '/projects']
-    }
-  },
+  nitro: {},
   ssr: true,
   app: {
     head: {
@@ -33,5 +29,14 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/site.webmanifest' }
       ]
     }
-  }
+  },
+  // Site Config
+  site: {
+    url: import.meta.env.NUXT_SITE_URL ?? 'http://localhost:3000',
+    name: import.meta.env.NUXT_SITE_NAME ?? 'Shiminori Portfolio'
+  },
+  // Sitemap Config
+  sitemap: {},
+  // Robots.txt Config
+  robots: {}
 })
