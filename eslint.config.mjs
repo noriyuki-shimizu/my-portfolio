@@ -37,7 +37,8 @@ export default withNuxt([
     files: TS_FILES,
     languageOptions: {
       parserOptions: {
-        project: './tsconfig.json'
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname
       }
     },
     rules: {

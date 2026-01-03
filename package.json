@@ -9,6 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "clean": "nuxt cleanup",
+    "typecheck": "nuxi typecheck",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "dprint fmt"
@@ -32,6 +33,7 @@
     "eslint-config-prettier": "^10.1.1",
     "eslint-import-resolver-typescript": "^4.2.2",
     "eslint-plugin-unused-imports": "^4.1.4",
-    "globals": "^16.0.0"
+    "globals": "^16.0.0",
+    "vue-tsc": "^3.2.1"
   }
 }
