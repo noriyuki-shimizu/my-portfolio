@@ -8,13 +8,13 @@ const props = defineProps<{
 }>()
 
 /** Page Title */
-const pageTitle = props.error?.statusCode === 404 ? 'ページが見つかりません' : 'エラーが発生しました'
+const pageTitle = props.error?.status === 404 ? 'ページが見つかりません' : 'エラーが発生しました'
 
 /** Description */
-const description = props.error?.statusCode === 404 ? 'お探しのページは見つかりませんでした。' : '申し訳ありません。エラーが発生しました。'
+const description = props.error?.status === 404 ? 'お探しのページは見つかりませんでした。' : '申し訳ありません。エラーが発生しました。'
 
 /** Error color based on status code */
-const errorColor = props.error?.statusCode === 404 ? 'from-purple-400 to-pink-400' : 'from-red-400 to-orange-400'
+const errorColor = props.error?.status === 404 ? 'from-purple-400 to-pink-400' : 'from-red-400 to-orange-400'
 
 // Meta tags for SEO
 useSeoMeta({
@@ -56,7 +56,7 @@ useSeoMeta({
               aria-hidden="true"
             >
               <svg
-                v-if="props.error?.statusCode === 404"
+                v-if="props.error?.status === 404"
                 class="w-12 h-12 text-white"
                 fill="none"
                 stroke="currentColor"
@@ -86,7 +86,7 @@ useSeoMeta({
         <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 mb-8">
           <!-- Status Code -->
           <h1 :class="`text-6xl md:text-8xl font-bold bg-gradient-to-r ${errorColor} bg-clip-text text-transparent mb-4`">
-            {{ props.error?.statusCode }}
+            {{ props.error?.status }}
           </h1>
 
           <!-- Title -->
@@ -100,11 +100,11 @@ useSeoMeta({
           </p>
 
           <!-- Error Details (for development) -->
-          <div v-if="props.error?.statusMessage" class="mb-6">
+          <div v-if="props.error?.statusText" class="mb-6">
             <details class="text-left">
               <summary class="text-gray-400 cursor-pointer hover:text-white transition-colors duration-300">エラー詳細を表示</summary>
               <div class="mt-4 p-4 bg-black/20 rounded-lg">
-                <p class="text-sm text-gray-300 break-all">{{ props.error.statusMessage }}</p>
+                <p class="text-sm text-gray-300 break-all">{{ props.error.statusText }}</p>
               </div>
             </details>
           </div>
