@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxtjs/sitemap', '@nuxtjs/robots'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxtjs/sitemap', '@nuxtjs/robots', '@vercel/analytics/nuxt'],
   css: ['@/assets/css/reset.css', '@/assets/css/global.css'],
   nitro: {},
   ssr: true,
