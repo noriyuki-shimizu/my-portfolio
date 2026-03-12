@@ -4,6 +4,8 @@ import { Analytics } from '@vercel/analytics/nuxt'
 
 <template>
   <div>
+    <NuxtAnnouncer />
+    <NuxtRouteAnnouncer />
     <Analytics />
     <NuxtLayout>
       <NuxtPage />
