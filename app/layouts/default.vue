@@ -23,6 +23,7 @@
             <NavLink to="/skills" :active="$route.path === '/skills'" role="listitem">Skills</NavLink>
             <NavLink to="/presentations" :active="$route.path === '/presentations'" role="listitem">Presentations</NavLink>
             <NavLink to="/projects" :active="$route.path === '/projects'" role="listitem">Projects</NavLink>
+            <NavLink to="/contributors" :active="$route.path === '/contributors'" role="listitem">Contributors</NavLink>
           </div>
 
           <!-- Mobile Menu Button -->
@@ -50,7 +51,7 @@
         <!-- Mobile Navigation -->
         <div
           id="mobile-menu"
-          class="md:hidden overflow-hidden transition-all duration-300"
+          class="md:hidden overflow-auto transition-all duration-300"
           :class="{ 'max-h-64 mt-4': mobileMenuOpen, 'max-h-0': !mobileMenuOpen }"
           role="list"
           aria-label="モバイルナビゲーション"
@@ -65,6 +66,9 @@
             >
             <NavLink to="/projects" :active="$route.path === '/projects'" mobile role="listitem" @click="mobileMenuOpen = false"
               >Projects</NavLink
+            >
+            <NavLink to="/contributors" :active="$route.path === '/contributors'" mobile role="listitem" @click="mobileMenuOpen = false"
+              >Contributors</NavLink
             >
           </div>
         </div>
