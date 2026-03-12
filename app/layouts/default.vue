@@ -21,9 +21,9 @@
           <div class="hidden md:flex items-center space-x-8" role="list">
             <NavLink to="/" :active="$route.path === '/'" role="listitem">Home</NavLink>
             <NavLink to="/skills" :active="$route.path === '/skills'" role="listitem">Skills</NavLink>
+            <NavLink to="/contributors" :active="$route.path === '/contributors'" role="listitem">Contributors</NavLink>
             <NavLink to="/presentations" :active="$route.path === '/presentations'" role="listitem">Presentations</NavLink>
             <NavLink to="/projects" :active="$route.path === '/projects'" role="listitem">Projects</NavLink>
-            <NavLink to="/contributors" :active="$route.path === '/contributors'" role="listitem">Contributors</NavLink>
           </div>
 
           <!-- Mobile Menu Button -->
@@ -61,14 +61,14 @@
             <NavLink to="/skills" :active="$route.path === '/skills'" mobile role="listitem" @click="mobileMenuOpen = false"
               >Skills</NavLink
             >
+            <NavLink to="/contributors" :active="$route.path === '/contributors'" mobile role="listitem" @click="mobileMenuOpen = false"
+              >Contributors</NavLink
+            >
             <NavLink to="/presentations" :active="$route.path === '/presentations'" mobile role="listitem" @click="mobileMenuOpen = false"
               >Presentations</NavLink
             >
             <NavLink to="/projects" :active="$route.path === '/projects'" mobile role="listitem" @click="mobileMenuOpen = false"
               >Projects</NavLink
-            >
-            <NavLink to="/contributors" :active="$route.path === '/contributors'" mobile role="listitem" @click="mobileMenuOpen = false"
-              >Contributors</NavLink
             >
           </div>
         </div>

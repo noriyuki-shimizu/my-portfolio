@@ -150,9 +150,9 @@ useSeoMeta({
 <template>
   <div class="min-h-screen">
     <!-- Header Section -->
-    <section class="py-20">
+    <section class="py-10">
       <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
+        <div class="text-center">
           <h1
             class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6"
           >

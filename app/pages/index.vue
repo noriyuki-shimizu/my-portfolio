@@ -74,9 +74,9 @@ useSeoMeta({
     </section>
 
     <!-- About Section -->
-    <section class="py-20 relative">
+    <section class="py-10 relative">
       <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8">
           <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">About Me</h2>
           <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full" aria-hidden="true"></div>
         </div>
@@ -166,9 +166,9 @@ useSeoMeta({
     </section>
 
     <!-- Quick Navigation -->
-    <section class="py-20">
+    <section class="py-10">
       <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8">
           <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">Explore</h2>
           <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full" aria-hidden="true"></div>
         </div>
@@ -197,6 +197,32 @@ useSeoMeta({
               </div>
               <h3 class="text-xl font-semibold text-white mb-3">Skills & Experience</h3>
               <p class="text-gray-400 text-sm">技術スタックとこれまでの経験をタイムライン形式で紹介</p>
+            </div>
+          </NuxtLink>
+
+          <!-- Contributions Card -->
+          <NuxtLink
+            to="/contributors"
+            class="group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-green-400/50 transition-all duration-300 transform hover:scale-105"
+            role="listitem"
+            aria-label="OSSコントリビューションのページへ移動"
+          >
+            <div class="text-center">
+              <div
+                class="w-16 h-16 bg-gradient-to-r from-green-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
+                aria-hidden="true"
+              >
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M7 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 0v8m0 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 0v2a4 4 0 0 1-4 4H9"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white mb-3">Contributions</h3>
+              <p class="text-gray-400 text-sm">OSSコントリビューションの情報をまとめています</p>
             </div>
           </NuxtLink>
 

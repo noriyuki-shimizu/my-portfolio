@@ -61,9 +61,9 @@ useSeoMeta({
 <template>
   <div class="min-h-screen">
     <!-- Header Section -->
-    <section class="py-20">
+    <section class="py-10">
       <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
+        <div class="text-center">
           <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">
             Presentations
           </h1>
@@ -94,7 +94,7 @@ useSeoMeta({
           </div>
 
           <!-- Empty State -->
-          <div v-else class="text-center py-20">
+          <div v-else class="text-center py-10">
             <div class="mb-8">
               <div
                 class="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 opacity-50"
