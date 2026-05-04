@@ -41,20 +41,7 @@ export default withNuxt([
         tsconfigRootDir: import.meta.dirname
       }
     },
-    rules: {
-      '@typescript-eslint/strict-boolean-expressions': [
-        'warn',
-        {
-          allowString: false,
-          allowNumber: false,
-          allowNullableObject: false,
-          allowNullableBoolean: false,
-          allowNullableString: false,
-          allowNullableNumber: false,
-          allowAny: false
-        }
-      ]
-    }
+    rules: {}
   },
   /* 全体的なルールセット */
   {
