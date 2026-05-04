@@ -2,6 +2,7 @@
   <div class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-x-hidden">
     <!-- Navigation -->
     <nav
+      ref="navRef"
       class="fixed top-0 w-full z-50 bg-black/10 backdrop-blur-lg border-b border-white/10"
       role="navigation"
       aria-label="メインナビゲーション"
@@ -19,11 +20,11 @@
 
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-8" role="list">
-            <NavLink to="/" :active="$route.path === '/'" role="listitem">Home</NavLink>
-            <NavLink to="/skills" :active="$route.path === '/skills'" role="listitem">Skills</NavLink>
-            <NavLink to="/contributors" :active="$route.path === '/contributors'" role="listitem">Contributors</NavLink>
-            <NavLink to="/presentations" :active="$route.path === '/presentations'" role="listitem">Presentations</NavLink>
-            <NavLink to="/projects" :active="$route.path === '/projects'" role="listitem">Projects</NavLink>
+            <NavLink to="/" :active="route.path === '/'" role="listitem">Home</NavLink>
+            <NavLink to="/skills" :active="route.path === '/skills'" role="listitem">Skills</NavLink>
+            <NavLink to="/contributors" :active="route.path === '/contributors'" role="listitem">Contributors</NavLink>
+            <NavLink to="/presentations" :active="route.path === '/presentations'" role="listitem">Presentations</NavLink>
+            <NavLink to="/projects" :active="route.path === '/projects'" role="listitem">Projects</NavLink>
           </div>
 
           <!-- Mobile Menu Button -->
@@ -57,17 +58,15 @@
           aria-label="モバイルナビゲーション"
         >
           <div class="space-y-4 pb-4">
-            <NavLink to="/" :active="$route.path === '/'" mobile role="listitem" @click="mobileMenuOpen = false">Home</NavLink>
-            <NavLink to="/skills" :active="$route.path === '/skills'" mobile role="listitem" @click="mobileMenuOpen = false"
-              >Skills</NavLink
-            >
-            <NavLink to="/contributors" :active="$route.path === '/contributors'" mobile role="listitem" @click="mobileMenuOpen = false"
+            <NavLink to="/" :active="route.path === '/'" mobile role="listitem" @click="mobileMenuOpen = false">Home</NavLink>
+            <NavLink to="/skills" :active="route.path === '/skills'" mobile role="listitem" @click="mobileMenuOpen = false">Skills</NavLink>
+            <NavLink to="/contributors" :active="route.path === '/contributors'" mobile role="listitem" @click="mobileMenuOpen = false"
               >Contributors</NavLink
             >
-            <NavLink to="/presentations" :active="$route.path === '/presentations'" mobile role="listitem" @click="mobileMenuOpen = false"
+            <NavLink to="/presentations" :active="route.path === '/presentations'" mobile role="listitem" @click="mobileMenuOpen = false"
               >Presentations</NavLink
             >
-            <NavLink to="/projects" :active="$route.path === '/projects'" mobile role="listitem" @click="mobileMenuOpen = false"
+            <NavLink to="/projects" :active="route.path === '/projects'" mobile role="listitem" @click="mobileMenuOpen = false"
               >Projects</NavLink
             >
           </div>
@@ -118,6 +117,12 @@
 </template>
 
 <script setup lang="ts">
+/** Route */
+const route = useRoute()
+
+/** ナビゲーション要素への参照 */
+const navRef = useTemplateRef<HTMLElement>('navRef')
+
 /** モバイルメニューの開閉状態 */
 const mobileMenuOpen = ref(false)
 
@@ -131,7 +136,7 @@ const toggleMobileMenu = (): void => {
  * @param event - クリックイベント
  */
 const handleClickOutside = (event: Event): void => {
-  const nav = document.querySelector('nav')
+  const nav = navRef.value
   const target = event.target as Node | null
   if (nav !== null && target !== null && !nav.contains(target)) {
     mobileMenuOpen.value = false

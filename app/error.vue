@@ -8,13 +8,13 @@ const props = defineProps<{
 }>()
 
 /** Page Title */
-const pageTitle = props.error?.status === 404 ? 'ページが見つかりません' : 'エラーが発生しました'
+const pageTitle = props.error.status === 404 ? 'ページが見つかりません' : 'エラーが発生しました'
 
 /** Description */
-const description = props.error?.status === 404 ? 'お探しのページは見つかりませんでした。' : '申し訳ありません。エラーが発生しました。'
+const description = props.error.status === 404 ? 'お探しのページは見つかりませんでした。' : '申し訳ありません。エラーが発生しました。'
 
 /** Error color based on status code */
-const errorColor = props.error?.status === 404 ? 'from-purple-400 to-pink-400' : 'from-red-400 to-orange-400'
+const errorColor = props.error.status === 404 ? 'from-purple-400 to-pink-400' : 'from-red-400 to-orange-400'
 
 // Meta tags for SEO
 useSeoMeta({
