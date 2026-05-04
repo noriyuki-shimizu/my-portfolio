@@ -29,16 +29,16 @@ useSeoMeta({
                 class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-lg opacity-50 animate-pulse-slow"
                 aria-hidden="true"
               ></div>
-              <img
+              <NuxtImg
                 src="/images/profile-400.webp"
-                srcset="/images/profile-200.webp 200w, /images/profile-400.webp 400w, /images/profile-800.webp 800w"
-                sizes="(max-width: 768px) 200px, 400px"
                 alt="Profile photo of Noriyuki Shimizu"
                 class="relative w-48 h-48 rounded-full object-cover border-4 border-white/20 shadow-2xl mx-auto"
                 width="192"
                 height="192"
+                sizes="200px md:400px"
                 loading="eager"
                 fetchpriority="high"
+                preload
               />
             </div>
           </div>

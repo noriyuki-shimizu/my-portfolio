@@ -79,11 +79,15 @@ useSeoMeta({
               role="listitem"
             >
               <!-- Header with Icon -->
-              <img
+              <NuxtImg
                 v-if="contribution.thumbnail"
                 :src="contribution.thumbnail"
                 :alt="`${contribution.project} - thumbnail`"
                 class="w-full h-full object-cover transition-transform duration-300"
+                width="600"
+                height="400"
+                sizes="sm:100vw md:50vw lg:400px"
+                loading="lazy"
               />
               <div v-else class="relative h-32 bg-gradient-to-br from-green-500/20 to-cyan-500/20 flex items-center justify-center">
                 <svg class="w-16 h-16 text-green-400 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

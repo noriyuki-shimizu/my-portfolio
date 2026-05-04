@@ -26,6 +26,7 @@
   "devDependencies": {
     "@nuxt/docs": "^4.2.2",
     "@nuxt/eslint": "^1.2.0",
+    "@nuxt/image": "^2.0.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@tailwindcss/typography": "^0.5.10",
     "dprint": "^0.52.0",

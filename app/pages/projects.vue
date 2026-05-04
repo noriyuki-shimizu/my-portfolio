@@ -184,10 +184,14 @@ useSeoMeta({
               >
                 <!-- Project Image -->
                 <div class="relative h-48 overflow-hidden">
-                  <img
+                  <NuxtImg
                     :src="project.image"
                     :alt="`${project.title}のプロジェクト画像`"
                     class="w-full h-full object-cover transition-transform duration-300"
+                    width="600"
+                    height="400"
+                    sizes="sm:100vw md:50vw lg:400px"
+                    loading="lazy"
                   />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300"
