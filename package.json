@@ -42,6 +42,13 @@
   "pnpm": {
     "overrides": {
       "@vercel/analytics>vue-router": "$vue-router"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "dprint",
+      "esbuild",
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }
