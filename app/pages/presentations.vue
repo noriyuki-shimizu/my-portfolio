@@ -45,6 +45,17 @@ const presentations: Presentation[] = [
     link: 'https://gamma.app/docs/MCP--ibrd92jgmyanm2l',
     thumbnail: '/images/ts-kaigi-2025-after-talk.webp',
     tags: ['Node.js', 'TypeScript', 'MCP', 'Playwright', 'a11y', 'zod']
+  },
+  {
+    id: 3,
+    title: 'node_modules は世界最高のTypeScript 教科書である',
+    date: '2026年06月09日',
+    venue: 'TSKaigi 2026 本編で話せなかったこと、話し足りなかったこと',
+    venueLink: 'https://freee.connpass.com/event/394541/',
+    description: 'パッケージのソースを追うと、出会ったことのない型に出会える。',
+    link: 'https://gamma.app/docs/node-modules-TypeScript--p6wqls00pz4z6zs',
+    thumbnail: '/images/ts-kaigi-2026-after-talk.webp',
+    tags: ['Node.js', 'TypeScript']
   }
 ]
 
