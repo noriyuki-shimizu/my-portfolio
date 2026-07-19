@@ -20,7 +20,7 @@
     "@nuxtjs/robots": "^6.1.2",
     "@nuxtjs/sitemap": "^8.2.2",
     "@vercel/analytics": "^2.0.1",
-    "nuxt": "^4.4.8",
+    "nuxt": "^4.5.0",
     "vue-router": "^5.1.0"
   },
   "devDependencies": {
