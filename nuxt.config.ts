@@ -48,7 +48,15 @@ export default defineNuxtConfig({
     name: import.meta.env.NUXT_SITE_NAME ?? 'Shiminori Portfolio'
   },
   // Sitemap Config
-  sitemap: {},
+  sitemap: {
+    urls: [
+      { loc: '/', changefreq: 'monthly', priority: 1.0 },
+      { loc: '/skills', changefreq: 'monthly', priority: 0.8 },
+      { loc: '/contributors', changefreq: 'monthly', priority: 0.8 },
+      { loc: '/presentations', changefreq: 'monthly', priority: 0.8 },
+      { loc: '/projects', changefreq: 'monthly', priority: 0.8 }
+    ]
+  },
   // Robots.txt Config
   robots: {}
 })
