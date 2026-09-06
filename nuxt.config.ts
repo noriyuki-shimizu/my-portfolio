@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxtjs/sitemap', '@nuxtjs/robots', '@vercel/analytics/nuxt', '@nuxt/image'],
+  plugins: ['@/plugins/rest/nuxtServerApi'],
   css: ['@/assets/css/reset.css', '@/assets/css/global.css'],
   nitro: {},
   ssr: true,
@@ -40,6 +41,12 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.jpg' },
         { rel: 'manifest', href: '/site.webmanifest' }
       ]
+    }
+  },
+  runtimeConfig: {
+    public: {
+      /** Log Level @see {@link https://www.npmjs.com/package/consola#log-level} */
+      logLevel: 3
     }
   },
   // Site Config
