@@ -12,9 +12,9 @@ useSeoMeta({
 <template>
   <div class="min-h-screen">
     <!-- Header Section -->
-    <section class="py-20">
+    <section class="py-10">
       <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
+        <div class="text-center">
           <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">
             Skills & Experience
           </h1>
@@ -438,7 +438,7 @@ useSeoMeta({
     </section>
 
     <!-- Skills Summary -->
-    <section class="py-20 bg-white/5 backdrop-blur-sm">
+    <section class="py-10 bg-white/5 backdrop-blur-sm">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">

@@ -45,6 +45,17 @@ const presentations: Presentation[] = [
     link: 'https://gamma.app/docs/MCP--ibrd92jgmyanm2l',
     thumbnail: '/images/ts-kaigi-2025-after-talk.webp',
     tags: ['Node.js', 'TypeScript', 'MCP', 'Playwright', 'a11y', 'zod']
+  },
+  {
+    id: 3,
+    title: 'node_modules は世界最高のTypeScript 教科書である',
+    date: '2026年06月09日',
+    venue: 'TSKaigi 2026 本編で話せなかったこと、話し足りなかったこと',
+    venueLink: 'https://freee.connpass.com/event/394541/',
+    description: 'パッケージのソースを追うと、出会ったことのない型に出会える。',
+    link: 'https://gamma.app/docs/node-modules-TypeScript--p6wqls00pz4z6zs',
+    thumbnail: '/images/ts-kaigi-2026-after-talk.webp',
+    tags: ['Node.js', 'TypeScript']
   }
 ]
 
@@ -61,9 +72,9 @@ useSeoMeta({
 <template>
   <div class="min-h-screen">
     <!-- Header Section -->
-    <section class="py-20">
+    <section class="py-10">
       <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
+        <div class="text-center">
           <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">
             Presentations
           </h1>
@@ -94,7 +105,7 @@ useSeoMeta({
           </div>
 
           <!-- Empty State -->
-          <div v-else class="text-center py-20">
+          <div v-else class="text-center py-10">
             <div class="mb-8">
               <div
                 class="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 opacity-50"

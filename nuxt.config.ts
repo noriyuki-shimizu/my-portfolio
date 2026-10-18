@@ -2,10 +2,23 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxtjs/sitemap', '@nuxtjs/robots', '@vercel/analytics/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxtjs/sitemap', '@nuxtjs/robots', '@vercel/analytics/nuxt', '@nuxt/image'],
+  plugins: ['@/plugins/rest/nuxtServerApi'],
   css: ['@/assets/css/reset.css', '@/assets/css/global.css'],
   nitro: {},
   ssr: true,
+  // Nuxt Image Config
+  image: {
+    format: ['webp'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536
+    }
+  },
   app: {
     head: {
       htmlAttrs: { lang: 'ja' },
@@ -30,13 +43,27 @@ export default defineNuxtConfig({
       ]
     }
   },
+  runtimeConfig: {
+    public: {
+      /** Log Level @see {@link https://www.npmjs.com/package/consola#log-level} */
+      logLevel: 3
+    }
+  },
   // Site Config
   site: {
     url: import.meta.env.NUXT_SITE_URL ?? 'http://localhost:3000',
     name: import.meta.env.NUXT_SITE_NAME ?? 'Shiminori Portfolio'
   },
   // Sitemap Config
-  sitemap: {},
+  sitemap: {
+    urls: [
+      { loc: '/', changefreq: 'monthly', priority: 1.0 },
+      { loc: '/skills', changefreq: 'monthly', priority: 0.8 },
+      { loc: '/contributors', changefreq: 'monthly', priority: 0.8 },
+      { loc: '/presentations', changefreq: 'monthly', priority: 0.8 },
+      { loc: '/projects', changefreq: 'monthly', priority: 0.8 }
+    ]
+  },
   // Robots.txt Config
   robots: {}
 })

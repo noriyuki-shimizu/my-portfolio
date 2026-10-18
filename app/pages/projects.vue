@@ -150,9 +150,9 @@ useSeoMeta({
 <template>
   <div class="min-h-screen">
     <!-- Header Section -->
-    <section class="py-20">
+    <section class="py-10">
       <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
+        <div class="text-center">
           <h1
             class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6"
           >
@@ -184,10 +184,14 @@ useSeoMeta({
               >
                 <!-- Project Image -->
                 <div class="relative h-48 overflow-hidden">
-                  <img
+                  <NuxtImg
                     :src="project.image"
                     :alt="`${project.title}のプロジェクト画像`"
                     class="w-full h-full object-cover transition-transform duration-300"
+                    width="600"
+                    height="400"
+                    sizes="sm:100vw md:50vw lg:400px"
+                    loading="lazy"
                   />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300"

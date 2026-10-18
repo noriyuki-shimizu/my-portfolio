@@ -2,11 +2,15 @@
   <div class="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 transform group">
     <!-- Thumbnail -->
     <div class="relative h-48 bg-gradient-to-br from-purple-500/20 to-pink-500/20 overflow-hidden">
-      <img
+      <NuxtImg
         v-if="presentation.thumbnail"
         :src="presentation.thumbnail"
         :alt="`${presentation.title} - thumbnail`"
         class="w-full h-full object-cover transition-transform duration-300"
+        width="600"
+        height="400"
+        sizes="sm:100vw md:50vw lg:400px"
+        loading="lazy"
       />
       <div v-else class="flex items-center justify-center h-full">
         <svg class="w-16 h-16 text-purple-400 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

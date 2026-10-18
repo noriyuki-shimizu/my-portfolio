@@ -8,7 +8,7 @@
     ]"
     :aria-current="active ? 'page' : undefined"
   >
-    <span :class="{ 'pl-4': mobile && active }">{{ $slots.default?.()[0]?.children }}</span>
+    <span :class="{ 'pl-4': mobile && active }"><slot /></span>
 
     <!-- Active indicator -->
     <span

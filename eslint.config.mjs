@@ -1,3 +1,5 @@
+import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
+import typescriptEslintParser from '@typescript-eslint/parser'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import jsdocPlugin from 'eslint-plugin-jsdoc'
 import eslintPluginUnusedImports from 'eslint-plugin-unused-imports'
@@ -35,31 +37,24 @@ export default withNuxt([
   /* TypeScript で型情報が必要なルールセット */
   {
     files: TS_FILES,
+    plugins: {
+      '@typescript-eslint': typescriptEslintPlugin
+    },
     languageOptions: {
       parserOptions: {
+        parser: typescriptEslintParser,
         projectService: true,
-        tsconfigRootDir: import.meta.dirname
+        tsconfigRootDir: import.meta.dirname,
+        extraFileExtensions: ['.vue']
       }
     },
-    rules: {
-      '@typescript-eslint/strict-boolean-expressions': [
-        'warn',
-        {
-          allowString: false,
-          allowNumber: false,
-          allowNullableObject: false,
-          allowNullableBoolean: false,
-          allowNullableString: false,
-          allowNullableNumber: false,
-          allowAny: false
-        }
-      ]
-    }
+    rules: {}
   },
   /* 全体的なルールセット */
   {
     files: ALL_FILES,
     plugins: {
+      '@typescript-eslint': typescriptEslintPlugin,
       jsdoc: jsdocPlugin,
       'unused-imports': eslintPluginUnusedImports
     },
